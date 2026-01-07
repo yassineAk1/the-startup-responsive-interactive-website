@@ -9,7 +9,7 @@ Deze week heb je een nieuwe opdracht gekregen en heb je geleerd om een website M
 Vandaag ga je eerst met een groep een huisstijl review doen.
 Daarna doe je in duo's een review op de Mobile First code.
 Tot slot ga je aan de hand van een video geavanceerde tips & tricks voor Responsive Design leren en toepassen.
-Als je klaar bent, kan je meteen beginnen met het verwerken van de issues die je hebt gekregen.
+Als je klaar bent, kan je meteen beginnen met het verwerken van de issues die je hebt gekregen, en je project board bijwerken.
 
 Voer de instructies voor de code en design review stap voor stap uit:
 
@@ -90,9 +90,19 @@ Schrijf daarna jullie namen bij de naam van de student die jullie reviewen uit d
 
 Behalve media queries zijn er in CSS geavanceerde technieken om ervoor te zorgen dat je website het goed doet op verschillende schermgroottes. 
 
-Bekijk de video '5 CSS Tips & Tricks for better Responsive Web Design'. In de video worden een aantal geavanceerde technieken uitgelegd: Relative padding, Responsive font-sizes, Responsive images, Dynamic viewport height en het HTML `inert` attribuur.
+Bekijk de video [5 CSS Tips & Tricks for better Responsive Web Design](https://www.youtube.com/watch?v=2IV08sP9m3U). In de video worden een aantal geavanceerde technieken uitgelegd: Relative padding, Responsive font-sizes, Responsive images, Dynamic viewport height en het HTML `inert` attribuur.
 
-Probeer de tips & tricks uit op je eigen project, of maak ze in jouw i-love-web repo. Leg met comments uit hoe de technieken werken. Kopieer de code met comments naar je Learning Journal, zodat dit je dit later weer kan teruglezen...
+Maak een paar demo's in jouw i-love-web met de tips & tricks uit de video. Leg met comments uit hoe de technieken werken. Kopieer de code met comments naar je Learning Journal, zodat dit je dit later weer kan teruglezen... Maak een issue aan op je opdracht als je tips en tricks hebt gezein die je kan toepassen op de opdracht van de opdrachtgever.
 
-### Bron
-[5 CSS Tips & Tricks for better Responsive Web Design](https://www.youtube.com/watch?v=2IV08sP9m3U)
+## Issues verwerken en Project board bijwerken
+
+Je hebt vandaag veel feedback gekregen op je One Column Layout en Mobile First. Bekijk alle issues die je hebt gekregen. Fix de issues waar je niet meer dan 10 minuten voor nodig hebt meteen. Maak voor de issues waar je meer tijd voor nodig hebt een nieuwe taak aan, voeg deze toe aan je project board en geef het een *tijdspad*.
+
+💪 Als je verschillende feedback hebt gekregen kan je hier een [takenlijstje](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-tasklists) van maken, hier kan je vervolgens sub-issues van  maken. 
+
+
+### Project board bijwerken
+Maandag heb je tijdens de sprint planning een grove planning gemaakt met een uren inschatting. Doorloop de verschillende taken en bekijk of de geschatte uren kloppen met de tijd die je daadwerkelijk aan de taken hebt besteed. Pas zo nodig de uren aan, hier leer je van.
+
+
+
