@@ -6,39 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PostNL homepagina</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+    <header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Consument</a></li>
-      <li><a href="#">Zakelijk</a></li>
-      <li><a href="#">Winkelwagen</a></li>
-    </ul>
-  </nav>
+        <nav class="main-nav">
+            <ul>
+                <li><a class="consument-knop" href="#">Consument</a></li>
+                <li><a href="#">Zakelijk</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Webshop</a></li>
+            </ul>
+        </nav>
 
-  <nav>
-    <a href="#">
-      <img src="assets/Logo.svg" alt="PostNL">
-    </a>
+        <nav class="secondary-nav">
+            <a href="#">
+                <img src="assets/Logo.svg" alt="PostNL">
+            </a>
 
-    <ul>
-      <li><button>Inloggen</button></li>
-      <li><button>Menu</button></li>
-    </ul>
-  </nav>
+            <ul>
+                <li><button>Inloggen</button></li>
+                <li><button>Menu</button></li>
+            </ul>
+        </nav>
 
-</header>
+    </header>
 
 
     <main>
-        <section>
-            <h1>Grenzeloos groeien met je webwinkel</h1>
-            <p>Verstuur het voordelig als brievenbuspakje</p>
-            <a href="#">Lees meer</a>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Grenzeloos groeien met je webwinkel</h1>
+                <p>Verstuur het voordelig als brievenbuspakje</p>
+                <a class="button">Lees meer</a>
+            </div>
+
+            <img src="assets/bezorgtijd.svg" alt="" class="hero-main-image">
+            <img src="assets/postlijn.svg" alt="" class="hero-secondary-image">
         </section>
 
         <section>
@@ -69,7 +77,7 @@
                     <input type="text" id="postcode" name="postcode" placeholder="1000 AA">
                 </div>
 
-                <button type="submit">Zoeken</button>
+                <button class="button button-blue-large" type="submit">Zoeken</button>
             </form>
         </section>
 
@@ -111,9 +119,8 @@
                 <p>Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Cras justo odio, dapibus
                     ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes,
                     nascetur ridiculus mus.</p>
-                <button>Button</button>
-                <a href="#">Link</a>
-                </div>
+                <a class="button button-blue-large" href="#">button</a>
+            </div>
         </section>
 
 
@@ -121,7 +128,7 @@
             <img src="assets/package-photo.svg.svg" alt="PostNL pakket">
             <h3>Voordelen van een persoonlijk account</h3>
             <p>Introtekst</p>
-            <a href="#">Maak een account aan</a>
+            <a class="button button-transparent-large" href="#">Maak een account aan</a>
         </section>
 
         <section>
@@ -144,7 +151,7 @@
             <img src="assets/package-photo.svg.svg" alt="PostNL pakket">
             <h3>Voordelen van een persoonlijk account</h3>
             <p>Introtekst</p>
-            <a href="#">Maak een account aan</a>
+            <a class="button button-transparent-large" href="#">Maak een account aan</a>
         </section>
 
     </main>
