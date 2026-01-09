@@ -99,3 +99,50 @@ header button {
   background: var(--card-blue-secondary);
   text-decoration: underline;
 }
+
+/* ---------------tabs------------- */
+
+
+.tabs-section {
+    background: var(--bg-gray);
+    border-radius: 8px;
+}
+
+.all-tabs {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.tab {
+    padding: 0.75rem 2rem;
+    background: var(--bg-accent-gray);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.tab.active {
+    background: var(--bg-gray);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.tab-content input,
+.tab-content select {
+    width: 100%;
+    padding: 0.5rem;
+}

@@ -7,6 +7,7 @@
     <title>PostNL homepagina</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -49,37 +50,54 @@
             <img src="assets/postnllijn.svg" alt="" class="hero-secondary-image">
         </section>
 
-        <section>
+<section class="tabs-section">
+    <div class="all-tabs">
+        <button class="tab active" data-tab="volg">Volg je pakket</button>
+        <button class="tab" data-tab="versturen">Versturen</button>
+        <button class="tab" data-tab="locaties">Locaties</button>
+        <button class="tab" data-tab="postcodes">Postcodes</button>
+    </div>
+
+    <div class="tab-content active" id="volg">
+        <form>        
+            <h3 class="h3">Volg je pakket</h3>
+
             <div>
-                <a href="#volg-pakket">Volg je pakket</a>
-                <a href="#versturen">Versturen</a>
-                <a href="#locaties">Locaties</a>
-                <a href="#postcode">Postcodes</a>
+                <label for="barcode">Barcode of niet-thuiscode</label>
+                <input type="text" id="barcode" placeholder="Begint vaak met 3S of KG">
             </div>
 
-            <h2>Volg je pakket</h2>
+            <div>
+                <label for="country">Land van de ontvanger</label>
+                <select id="country">
+                    <option value="NL">Nederland</option>
+                </select>
+            </div>
 
-            <form>
-                <div>
-                    <label for="barcode">Barcode of niet-thuiscode</label>
-                    <input type="text" id="barcode" name="barcode" placeholder="Begint vaak met 3S of KG">
-                </div>
+            <div>
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" placeholder="1000 AA">
+            </div>
 
-                <div>
-                    <label for="country">Land van de ontvanger</label>
-                    <select id="country" name="country">
-                        <option value="NL">Nederland</option>
-                    </select>
-                </div>
+            <button class="button" type="submit">Zoeken</button>
+        </form>
+    </div>
 
-                <div>
-                    <label for="postcode">Postcode</label>
-                    <input type="text" id="postcode" name="postcode" placeholder="1000 AA">
-                </div>
+    <div class="tab-content" id="versturen">
+        <h2>Versturen</h2>
+        <p>Versturen van je pakket</p>
+    </div>
 
-                <button class="button button-blue-large" type="submit">Zoeken</button>
-            </form>
-        </section>
+    <div class="tab-content" id="locaties">
+        <h2>Locaties</h2>
+        <p>postNL-punten</p>
+    </div>
+
+    <div class="tab-content" id="postcodes">
+        <h2>Postcodes</h2>
+        <p>Postcode zoeken</p>
+    </div>
+</section>
 
         <div>
             <form>
