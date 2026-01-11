@@ -109,7 +109,6 @@ header button {
 
 .all-tabs {
     display: flex;
-    margin-bottom: 2rem;
 }
 
 .tab {
@@ -129,5 +128,6 @@ header button {
 
 .tab-content.active {
     display: block;
+    padding: 1rem 1rem;
 }
 
