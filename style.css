@@ -105,7 +105,6 @@ header button {
 
 .tabs-section {
     background: var(--bg-gray);
-    border-radius: 8px;
 }
 
 .all-tabs {
@@ -120,11 +119,9 @@ header button {
     cursor: pointer;
 }
 
-
-
 .tab.active {
     background: var(--bg-gray);
-}
+  }
 
 .tab-content {
     display: none;
@@ -134,15 +131,3 @@ header button {
     display: block;
 }
 
-.tab-content form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    padding: 0 1rem 1rem 1rem;
-}
-
-.tab-content input,
-.tab-content select {
-    width: 100%;
-    padding: 0.5rem;
-}
