@@ -104,50 +104,53 @@ header button {
 
 
 
-
 .all-tabs {
   display: flex;
   justify-content: space-between;
 }
 
-
 .tab {
-  background: var(--bg-accent-gray);
+  background-color: var(--bg-gray); 
   border: none;
   cursor: pointer;
-  width:100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   flex-direction: column-reverse;
   color: var(--text-m);
   text-decoration: none;
   align-items: center;
-  border-radius: 8px 8px 0 0 ;
-
-  img{
-    width: 50%;
-  }
+  border-radius: 8px 8px 0 0;
+  padding: 1rem; 
 }
 
-.tab-content {
-  display: none;
+.tab img {
+  width: 50%;
 }
 
 .tabs-section:has(#volg:target) .tab[href="#volg"],
 .tabs-section:has(#versturen:target) .tab[href="#versturen"],
 .tabs-section:has(#locaties:target) .tab[href="#locaties"],
 .tabs-section:has(#postcodes:target) .tab[href="#postcodes"] {
-  background-color: var(--bg-gray);
+  background-color: var(--bg-accent-gray);
+}
+
+.tab-content {
+  display: none;
+  padding: 1rem;
 }
 
 .tab-content:target {
   display: block;
-  background-color: var(--bg-gray);
+  background-color: var(--bg-accent-gray);
 }
 
-.tabs-section>.tab-content:first-of-type {
+.tabs-section:not(:has(:target)) #volg {
   display: block;
+  background-color: var(--bg-accent-gray);
+}
 
+.tabs-section:not(:has(:target)) .tab[href="#volg"] {
+  background-color: var(--bg-accent-gray);
 }
 
 /* ---------------info cards------------- */
