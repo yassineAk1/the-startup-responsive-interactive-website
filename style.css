@@ -1,8 +1,8 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 
@@ -19,8 +19,8 @@ header nav {
   padding: 1rem;
 }
 
-.secondary-nav{
-background: var(--bg-white);
+.secondary-nav {
+  background: var(--bg-white);
 }
 
 header ul {
@@ -33,7 +33,7 @@ header a {
   color: var(--text-light-blue);
   font-size: var(--text-m);
 
-  &.consument-knop{
+  &.consument-knop {
     color: var(--text-orange);
   }
 }
@@ -103,31 +103,113 @@ header button {
 /* ---------------tabs------------- */
 
 
-.tabs-section {
-    background: var(--bg-gray);
-}
+
 
 .all-tabs {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
 }
+
 
 .tab {
-    padding: 0.75rem 2rem;
-    background: var(--bg-accent-gray);
-    border: none;
-    cursor: pointer;
-}
+  background: var(--bg-accent-gray);
+  border: none;
+  cursor: pointer;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  color: var(--text-m);
+  text-decoration: none;
+  align-items: center;
+  border-radius: 8px 8px 0 0 ;
 
-.tab.active {
-    background: var(--bg-gray);
+  img{
+    width: 50%;
   }
+}
 
 .tab-content {
-    display: none;
+  display: none;
 }
 
-.tab-content.active {
-    display: block;
-    padding: 1rem 1rem;
+.tabs-section:has(#volg:target) .tab[href="#volg"],
+.tabs-section:has(#versturen:target) .tab[href="#versturen"],
+.tabs-section:has(#locaties:target) .tab[href="#locaties"],
+.tabs-section:has(#postcodes:target) .tab[href="#postcodes"] {
+  background-color: var(--bg-gray);
 }
 
+.tab-content:target {
+  display: block;
+  background-color: var(--bg-gray);
+}
+
+.tabs-section>.tab-content:first-of-type {
+  display: block;
+
+}
+
+/* ---------------info cards------------- */
+
+
+.subgrid-wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 1rem;
+
+
+  .info-card {
+    color: var(--bg-white);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    border-radius: 8px;
+    min-height: 300px;
+    overflow: hidden;
+
+
+    .card-content {
+      padding: 1rem;
+    }
+  }
+}
+
+.info-card:nth-of-type(1) .card-content {
+  background-color: var(--card-red-main);
+}
+
+.info-card:nth-of-type(2) .card-content {
+  background-color: var(--card-blue-main);
+}
+
+.info-card:nth-of-type(3) .card-content {
+  background-color: var(--card-navy-main);
+}
+
+.info-card:nth-of-type(1) .card-link {
+  color: var(--bg-white);
+  background-color:var(--card-red-secondary);
+  padding: 1em;
+}
+
+.info-card:nth-of-type(2) .card-link {
+  color: var(--bg-white);
+  background-color: var(--card-blue-secondary);
+  padding: 1em;
+}
+
+.info-card:nth-of-type(3) .card-link {
+  color: var(--bg-white);
+  background-color: var(--card-navy-secondary);
+  padding: 1em;
+}
+
+.image-card img {
+  width: 100%;
+}
+
+/* ---------------footer------------- */
+.postnl-footer {
+  background-color: var(--bg-gray);
+}

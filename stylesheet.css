@@ -6,7 +6,7 @@
     /* ------------colors-------------- */
   /* Backgrounds */
   --bg-white: #ffffff;
-  --bg-gray: #f1f1f2;
+  --bg-gray: #f1f1f2bd;
   --bg-accent-gray: #e7e8eb;
 
   /* Text colors */
@@ -17,7 +17,7 @@
 
   /* Card – Red */
   --card-red-main: #d83d00;
-  --card-red-secondary: #bb3200;
+  --card-red-secondary: #8e0d27;
 
   /* Card – Blue */
   --card-blue-main: #6161ff;
