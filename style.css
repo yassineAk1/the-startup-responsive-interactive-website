@@ -124,7 +124,7 @@ header button {
 }
 
 .tab img {
-  width: 50%;
+  width: 2em;
 }
 
 .tabs-section:has(#volg:target) .tab[href="#volg"],
