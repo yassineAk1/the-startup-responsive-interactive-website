@@ -134,9 +134,18 @@ header button {
   background-color: var(--bg-accent-gray);
 }
 
+.tabs-section:has(#volg:target) .tab[href="#volg"],
+.tabs-section:has(#versturen:target) .tab[href="#versturen"],
+.tabs-section:has(#locaties:target) .tab[href="#locaties"],
+.tabs-section:has(#postcodes:target) .tab[href="#postcodes"] img {
+  filter:hue-rotate(120deg);
+}
+
 .tab-content {
   display: none;
   padding: 1rem;
+  scroll-margin-top: 250px; 
+
 }
 
 .tab-content:target {
@@ -153,7 +162,53 @@ header button {
   background-color: var(--bg-accent-gray);
 }
 
-/* ---------------info cards------------- */
+.tab-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1rem;
+
+}
+
+.tab-content input,
+.tab-content select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    outline: auto gray;
+
+}
+
+
+/* ---------------zoeken form------------- */
+.zoeken-form label {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.zoeken-form form {
+    display: flex;
+    margin: 1em;
+}
+
+.zoeken-form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 2px solid #ddd;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.zoeken-form button {
+    background: var(--card-blue-main);
+    border: none;
+    padding: 0 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* ---------------info cards 1,2,3------------- */
 
 
 .subgrid-wrapper {
@@ -168,15 +223,29 @@ header button {
     display: grid;
     grid-template-rows: 1fr auto;
     border-radius: 8px;
-    min-height: 300px;
+    height: 350px;
     overflow: hidden;
 
 
-    .card-content {
-      padding: 1rem;
+    
     }
   }
-}
+
+/* ook gebruikt voor post-card */
+.card-content {
+      padding: 1.5rem 1rem;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      
+
+      img {
+        max-width: fit-content;
+
+        
+      }
+    }
+
 
 .info-card:nth-of-type(1) .card-content {
   background-color: var(--card-red-main);
@@ -212,7 +281,140 @@ header button {
   width: 100%;
 }
 
+
+/* ---------------image card------------- */
+
+.image-card {
+  background-color: var(--bg-gray);
+  margin-bottom: 1rem;
+
+
+  .image-card-text {
+    height: 250px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+
+/* ---------------create acount card------------- */
+
+.account-card{
+  background-color: var(--bg-accent-gray);
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: space-between;
+  height: 400px;
+
+  img{
+    align-self: center;
+    max-width: fit-content;
+  }
+  
+}
+
+
+/* ---------------post cards------------- */
+
+.post-card{
+  border-radius: 6px;
+  background-color: var(--bg-accent-gray);
+  margin: 1rem;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 380px;
+
+  .card-content{
+    padding: 1.5rem;
+  }
+
+  .card-content .car-post-icon {
+  margin-left: -2.5rem; 
+}
+
+.post-card-link{
+  background-color: #E6E7EA;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 0 0 6px 6px;
+}
+
+}
+
+
+
+
 /* ---------------footer------------- */
 .postnl-footer {
   background-color: var(--bg-gray);
+  padding: 1rem;
+}
+
+.postnl-footer nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.postnl-footer details {
+  border-bottom: 1px solid #d1d1d1;
+  padding: 1rem 0;
+}
+
+.postnl-footer summary {
+  cursor: pointer;
+  color: var(--text-dark-blue);
+  display: flex;
+  justify-content: space-between;
+}
+
+.postnl-footer details ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.postnl-footer details a {
+  color: var(--text-light-blue);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.postnl-footer details a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.footer-logo-content img {
+  height: 2rem;
+}
+
+.footer-legal-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-legal-content a {
+  color: var(--text-black);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-legal-content a:hover {
+  text-decoration: underline;
 }
