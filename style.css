@@ -160,6 +160,8 @@ header button {
 
 .tabs-section:not(:has(:target)) .tab[href="#volg"] {
   background-color: var(--bg-accent-gray);
+    filter:hue-rotate(120deg);
+
 }
 
 .tab-content form {

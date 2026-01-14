@@ -70,7 +70,7 @@
             </div>
 
             <div id="volg" class="tab-content">
-                <h2>Volg je pakket</h2>
+                <h2 class="tab-heading">Volg je pakket</h2>
 
                 <form>
                     <div>
@@ -97,17 +97,43 @@
 
 
             <div id="versturen" class="tab-content">
-                <h2>Versturen</h2>
-                <p>informatie over het versturen van je pakket</p>
+                <h2 class="tab-heading">Versturen</h2>
+                <form>
+                    <div>
+                        <label for="country">Naar welk land</label>
+                        <select id="country" name="country">
+                            <option value="NL">Nederland</option>
+                            <option value="BE">Belgie</option>
+                        </select>
+                    </div>
+                
+                    <div>
+                        <label for="package">Wat wil je versturen</label>
+                        <select id="packege" name="country">
+                            <option value="Brief">Brief</option>
+                            <option value="Pakket">Pakket</option>
+                        </select>
+                    </div>
+                
+                    <div>
+                        <label for="weight">Wat is het gewicht</label>
+                        <select id="weight" name="country">
+                            <option value="0-20 gram">0-20 Gram</option>
+                            <option value="20-50 gram">20-50 Gram</option>
+                        </select>
+                    </div>
+                
+                </form>
+
             </div>
 
             <div id="locaties" class="tab-content">
-                <h2>Locaties</h2>
+                <h2 class="tab-heading">Locaties</h2>
                 <p>informatie over de locaties</p>
             </div>
 
             <div id="postcodes" class="tab-content">
-                <h2>Postcodes</h2>
+                <h2 class="tab-heading">Postcodes</h2>
                 <p>postcode zoeken</p>
             </div>
         </section>

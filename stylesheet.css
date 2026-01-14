@@ -13,7 +13,7 @@
   --text-dark-blue: #001a73;
   --text-black: #121212;
   --text-light-blue: #4e4ee2;
-  --text-orange: #a94800;
+  --text-orange: #E75204FF;
 
   /* Card – Red */
   --card-red-main: #d83d00;
@@ -77,6 +77,11 @@ h2.m {
   font-family: var(--font-heading);
 }
 
+.tab-heading{
+  font-size: var(--h3-s);
+  font-weight: var(--weight-bold);
+  color: var(--text-orange);
+}
 
 .text-l {
   font-size: var(--text-l);
