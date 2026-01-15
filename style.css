@@ -132,19 +132,19 @@ header button {
 .tabs-section:has(#locaties:target) .tab[href="#locaties"],
 .tabs-section:has(#postcodes:target) .tab[href="#postcodes"] {
   background-color: var(--bg-accent-gray);
+
+img{
+    filter:hue-rotate(120deg);
+
+}
 }
 
-.tabs-section:has(#volg:target) .tab[href="#volg"],
-.tabs-section:has(#versturen:target) .tab[href="#versturen"],
-.tabs-section:has(#locaties:target) .tab[href="#locaties"],
-.tabs-section:has(#postcodes:target) .tab[href="#postcodes"] img {
-  filter:hue-rotate(120deg);
-}
+
 
 .tab-content {
   display: none;
   padding: 1rem;
-  scroll-margin-top: 250px; 
+  scroll-margin-top: 275px; 
 
 }
 

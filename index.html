@@ -106,7 +106,7 @@
                             <option value="BE">Belgie</option>
                         </select>
                     </div>
-                
+
                     <div>
                         <label for="package">Wat wil je versturen</label>
                         <select id="packege" name="country">
@@ -114,7 +114,7 @@
                             <option value="Pakket">Pakket</option>
                         </select>
                     </div>
-                
+
                     <div>
                         <label for="weight">Wat is het gewicht</label>
                         <select id="weight" name="country">
@@ -122,30 +122,66 @@
                             <option value="20-50 gram">20-50 Gram</option>
                         </select>
                     </div>
-                
+                    <button class="button button-blue-large" type="submit">Versturen</button>
+
                 </form>
 
             </div>
 
             <div id="locaties" class="tab-content">
-                <h2 class="tab-heading">Locaties</h2>
-                <p>informatie over de locaties</p>
+                <h2 class="tab-heading">PostNL-punten</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="postnl-punten">Zoek PostNL-punten</label>
+                        <input type="text" id="postnl-punten" name="postcode"
+                            placeholder="Zoek op plaats, straat of postcode">
+                    </div>
+
+                    <button class="button button-blue-large" type="submit">Zoeken</button>
+                </form>
+
             </div>
 
             <div id="postcodes" class="tab-content">
-                <h2 class="tab-heading">Postcodes</h2>
-                <p>postcode zoeken</p>
+                <h2 class="tab-heading">Postcode zoeken</h2>
+
+                <form class="postcode-form">
+                    <div>
+                        <label for="street">Straat</label>
+                        <input type="text" id="street" name="street" placeholder="Bijv. Hoofdstraat">
+                    </div>
+
+                    <div>
+                        <label for="houseNumber">Huisnummer</label>
+                        <input type="number" id="houseNumber" name="houseNumber" placeholder="Bijv. 12">
+                    </div>
+
+                    <div>
+                        <label for="addition">Toevoeging (niet verplicht)</label>
+                        <input type="text" id="addition" name="addition" placeholder="Bijv. A">
+                    </div>
+
+                    <div>
+                        <label for="city">Woonplaats</label>
+                        <input type="text" id="city" name="city" placeholder="Bijv. Amsterdam">
+                    </div>
+
+                    <button class="button button-blue-large" type="submit">
+                        Zoeken
+                    </button>
+                </form>
+
             </div>
         </section>
 
 
-<div class="zoeken-form">
-    <label class="text-l" for="search">Ik ben op zoek naar...</label>
-    <form>
-        <input type="search" id="search" placeholder="Wat zoek je?">
-        <button type="submit">🔍</button>
-    </form>
-</div>
+        <div class="zoeken-form">
+            <label class="text-l" for="search">Ik ben op zoek naar...</label>
+            <form>
+                <input type="search" id="search" placeholder="Wat zoek je?">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
 
         <section>
             <div class="subgrid-wrapper">
@@ -188,8 +224,10 @@
                 <img src="assets/woman-photo.svg" alt="">
                 <div class="image-card-text">
                     <h2>Card title</h2>
-                    <p>Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Cras justo odio, dapibus
-                        ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    <p>Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Cras justo odio,
+                        dapibus
+                        ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient
+                        montes,
                         nascetur ridiculus mus.</p>
                     <a class="button button-blue-large" href="#">button</a>
                 </div>
@@ -199,11 +237,11 @@
 
         <section>
             <div class="account-card">
-            <img src="assets/package-photo.svg.svg" alt="PostNL pakket">
-            <h3>Voordelen van een persoonlijk account</h3>
-            <p>Introtekst</p>
-            <a class="button button-transparent-large" href="#">Maak een account aan</a>
-        </div>
+                <img src="assets/package-photo.svg.svg" alt="PostNL pakket">
+                <h3>Voordelen van een persoonlijk account</h3>
+                <p>Introtekst</p>
+                <a class="button button-transparent-large" href="#">Maak een account aan</a>
+            </div>
         </section>
 
         <section>
@@ -215,7 +253,7 @@
                 </div>
                 <a class="post-card-link text-m" href="#">Lees over partijenpost</a>
             </div>
-        
+
             <div class="post-card">
                 <div class="card-content">
                     <img class="car-post-icon" src="assets/truck-icon.svg" alt="">
@@ -228,11 +266,11 @@
 
         <section>
             <div class="account-card">
-            <img src="assets/package-photo.svg.svg" alt="PostNL pakket">
-            <h3>Voordelen van een persoonlijk account</h3>
-            <p>Introtekst</p>
-            <a class="button button-transparent-large" href="#">Maak een account aan</a>
-        </div>
+                <img src="assets/package-photo.svg.svg" alt="PostNL pakket">
+                <h3>Voordelen van een persoonlijk account</h3>
+                <p>Introtekst</p>
+                <a class="button button-transparent-large" href="#">Maak een account aan</a>
+            </div>
         </section>
 
     </main>
@@ -250,7 +288,7 @@
             </details>
 
             <details>
-                <summary  class="text-m">Ontvangen</summary>
+                <summary class="text-m">Ontvangen</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
                     <li><a href="#link2">Link 2</a></li>
@@ -259,7 +297,7 @@
             </details>
 
             <details>
-                <summary  class="text-m">Zakelijke oplossingen</summary>
+                <summary class="text-m">Zakelijke oplossingen</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
                     <li><a href="#link2">Link 2</a></li>
@@ -277,7 +315,7 @@
             </details>
 
             <details>
-                <summary  class="text-m">Direct regelen</summary>
+                <summary class="text-m">Direct regelen</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
                     <li><a href="#link2">Link 2</a></li>
@@ -286,7 +324,7 @@
             </details>
 
             <details>
-                <summary  class="text-m">PostNL-app</summary>
+                <summary class="text-m">PostNL-app</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
                     <li><a href="#link2">Link 2</a></li>
@@ -295,7 +333,7 @@
             </details>
 
             <details>
-                <summary  class="text-m">Hulp</summary>
+                <summary class="text-m">Hulp</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
                     <li><a href="#link2">Link 2</a></li>
@@ -304,7 +342,7 @@
             </details>
 
             <details>
-                <summary  class="text-m">Over PostNL</summary>
+                <summary class="text-m">Over PostNL</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
                     <li><a href="#link2">Link 2</a></li>
@@ -315,7 +353,7 @@
         </nav>
 
         <div class="footer-logo-content">
-                         <img src="assets/Logo.svg" alt="">
+            <img src="assets/Logo.svg" alt="">
             <span class="text-m"> © Koninklijke PostNL</span>
         </div>
 
