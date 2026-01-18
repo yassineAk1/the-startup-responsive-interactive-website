@@ -15,12 +15,13 @@
     <header>
 
         <nav class="main-nav">
-            <ul>
-                <li><a class="consument-knop" href="#">Consument</a></li>
-                <li><a href="#">Zakelijk</a></li>
+            <ul class="link-buttons-nav">
+                <li><a class="consument-knop" id="consument" href="#consument">Consument</a></li>
+                <li><a class="zakelijk-knop" id="zakelijk" href="#zakelijk">Zakelijk</a></li>
             </ul>
-            <ul>
+            <ul class="webshop">
                 <li><a href="#">Webshop</a></li>
+                <img src="assets/Vector.svg" alt="">
             </ul>
         </nav>
 
@@ -75,7 +76,7 @@
                 <form>
                     <div>
                         <label for="barcode">Barcode of niet-thuiscode</label>
-                        <input type="text" id="barcode" name="barcode" placeholder="Begint vaak met 3S of KG">
+                        <input type="text" id="barcode" name="barcode" required placeholder="Begint vaak met 3S of KG">
                     </div>
 
                     <div>
