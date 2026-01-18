@@ -70,7 +70,7 @@ header button {
     padding: 0.5rem 0.75rem 1rem 0.75rem;
     border-radius: 4px 4px 0 0;
     font-weight: 700;
-      animation: tabSlideIn  ease-out;
+      animation: tabSlideIn ;
         scroll-margin-top: 100px; 
 
 
@@ -87,7 +87,7 @@ header button {
 
 
 .zakelijk-knop, .consument-knop {
-  transition: 0.25s ease;
+  transition: 0.25s ease-in;
 
 }
 
