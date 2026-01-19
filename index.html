@@ -20,9 +20,12 @@
                 <li><a class="zakelijk-knop" id="zakelijk" href="#zakelijk">Zakelijk</a></li>
             </ul>
             <ul class="webshop">
-                <li><a href="#">Webshop</a></li>
-                <img src="assets/Vector.svg" alt="">
+                <li>
+                    <a href="#">Webshop</a>
+                    <img src="assets/Vector.svg" alt="">
+                </li>
             </ul>
+
         </nav>
 
         <nav class="secondary-nav">
@@ -40,153 +43,154 @@
 
 
     <main>
-        <section class="hero-desktop">
-        <section class="hero">
-            <div class="hero-text-content">
-                <h1>Grenzeloos groeien met je webwinkel</h1>
-                <p>Verstuur het voordelig als brievenbuspakje</p>
-                <a class="button">Lees meer</a>
+        <div class="hero-desktop-wrapper">
+            <section class="hero">
+                <div class="hero-text-content">
+                    <h1>Grenzeloos groeien met je webwinkel</h1>
+                    <p>Verstuur het voordelig als brievenbuspakje</p>
+                    <a class="button">Lees meer</a>
+                </div>
+                <div class="hero-image-content">
+                    <img src="assets/bezorgtijdpostnl.svg" alt="" class="hero-main-image">
+                    <img src="assets/postnllijn.svg" alt="" class="hero-secondary-image">
+                </div>
+            </section>
+
+            <section class="tabs-section">
+                <div class="all-tabs">
+                    <a href="#volg" class="tab">Volgen
+                        <img src="assets/icon1.svg" alt="">
+                    </a>
+                    <a href="#versturen" class="tab">Versturen
+                        <img src="assets/icon2.svg" alt="">
+
+                    </a>
+                    <a href="#locaties" class="tab">PostNL-punten
+                        <img src="assets/icon3.svg" alt="">
+
+                    </a>
+                    <a href="#postcodes" class="tab">Postcodes
+                        <img src="assets/icon4.svg" alt="">
+
+                    </a>
+                </div>
+
+                <div id="volg" class="tab-content">
+                    <h2 class="tab-heading">Volg je pakket</h2>
+
+                    <form>
+                        <div>
+                            <label for="barcode">Barcode of niet-thuiscode</label>
+                            <input type="text" id="barcode" name="barcode" required
+                                placeholder="Begint vaak met 3S of KG">
+                        </div>
+
+                        <div>
+                            <label for="fromCountry">Land van de ontvanger</label>
+                            <select id="fromCountry" name="fromCountry">
+                                <option value="NL">Nederland</option>
+                                <option value="BE">Belgie</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="postcode">Postcode</label>
+                            <input type="text" id="postcode" name="postcode" placeholder="1000 AA">
+                        </div>
+
+                        <button class="button button-blue-large" type="submit">Zoeken</button>
+                    </form>
+                </div>
+
+
+                <div id="versturen" class="tab-content">
+                    <h2 class="tab-heading">Versturen</h2>
+                    <form>
+                        <div>
+                            <label for="toCountry">Naar welk land</label>
+                            <select id="toCountry" name="toCountry">
+                                <option value="NL">Nederland</option>
+                                <option value="BE">Belgie</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="package">Wat wil je versturen</label>
+                            <select id="package" name="country">
+                                <option value="Brief">Brief</option>
+                                <option value="Pakket">Pakket</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="weight">Wat is het gewicht</label>
+                            <select id="weight" name="country">
+                                <option value="0-20 gram">0-20 Gram</option>
+                                <option value="20-50 gram">20-50 Gram</option>
+                            </select>
+                        </div>
+                        <button class="button button-blue-large" type="submit">Versturen</button>
+
+                    </form>
+
+                </div>
+
+                <div id="locaties" class="tab-content">
+                    <h2 class="tab-heading">PostNL-punten</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="postnl-punten">Zoek PostNL-punten</label>
+                            <input type="text" id="postnl-punten" name="postcode"
+                                placeholder="Zoek op plaats, straat of postcode">
+                        </div>
+
+                        <button class="button button-blue-large" type="submit">Zoeken</button>
+                    </form>
+
+                </div>
+
+                <div id="postcodes" class="tab-content">
+                    <h2 class="tab-heading">Postcode zoeken</h2>
+
+                    <form class="postcode-form">
+                        <div>
+                            <label for="street">Straat</label>
+                            <input type="text" id="street" name="street" placeholder="Bijv. Hoofdstraat">
+                        </div>
+
+                        <div>
+                            <label for="houseNumber">Huisnummer</label>
+                            <input type="number" id="houseNumber" name="houseNumber" placeholder="Bijv. 12">
+                        </div>
+
+                        <div>
+                            <label for="addition">Toevoeging (niet verplicht)</label>
+                            <input type="text" id="addition" name="addition" placeholder="Bijv. A">
+                        </div>
+
+                        <div>
+                            <label for="city">Woonplaats</label>
+                            <input type="text" id="city" name="city" placeholder="Bijv. Amsterdam">
+                        </div>
+
+                        <button class="button button-blue-large" type="submit">
+                            Zoeken
+                        </button>
+                    </form>
+
+                </div>
+            </section>
+
+            <div class="zoeken-form-wrapper">
+                <div class="zoeken-form">
+                    <label class="text-l" for="search">Ik ben op zoek naar...</label>
+                    <form>
+                        <input type="search" id="search" placeholder="Wat zoek je?">
+                        <button type="submit">🔍</button>
+                    </form>
+                </div>
             </div>
-            <div class="hero-image-content">
-                <img src="assets/bezorgtijdpostnl.svg" alt="" class="hero-main-image">
-                <img src="assets/postnllijn.svg" alt="" class="hero-secondary-image">
-            </div>
-        </section>
-
-        <section class="tabs-section">
-            <div class="all-tabs">
-                <a href="#volg" class="tab">Volgen
-                    <img src="assets/icon1.svg" alt="">
-                </a>
-                <a href="#versturen" class="tab">Versturen
-                    <img src="assets/icon2.svg" alt="">
-
-                </a>
-                <a href="#locaties" class="tab">PostNL-punten
-                    <img src="assets/icon3.svg" alt="">
-
-                </a>
-                <a href="#postcodes" class="tab">Postcodes
-                    <img src="assets/icon4.svg" alt="">
-
-                </a>
-            </div>
-
-            <div id="volg" class="tab-content">
-                <h2 class="tab-heading">Volg je pakket</h2>
-
-                <form>
-                    <div>
-                        <label for="barcode">Barcode of niet-thuiscode</label>
-                        <input type="text" id="barcode" name="barcode" required placeholder="Begint vaak met 3S of KG">
-                    </div>
-
-                    <div>
-                        <label for="country">Land van de ontvanger</label>
-                        <select id="country" name="country">
-                            <option value="NL">Nederland</option>
-                            <option value="BE">Belgie</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="postcode">Postcode</label>
-                        <input type="text" id="postcode" name="postcode" placeholder="1000 AA">
-                    </div>
-
-                    <button class="button button-blue-large" type="submit">Zoeken</button>
-                </form>
-            </div>
-
-
-            <div id="versturen" class="tab-content">
-                <h2 class="tab-heading">Versturen</h2>
-                <form>
-                    <div>
-                        <label for="country">Naar welk land</label>
-                        <select id="country" name="country">
-                            <option value="NL">Nederland</option>
-                            <option value="BE">Belgie</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="package">Wat wil je versturen</label>
-                        <select id="package" name="country">
-                            <option value="Brief">Brief</option>
-                            <option value="Pakket">Pakket</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="weight">Wat is het gewicht</label>
-                        <select id="weight" name="country">
-                            <option value="0-20 gram">0-20 Gram</option>
-                            <option value="20-50 gram">20-50 Gram</option>
-                        </select>
-                    </div>
-                    <button class="button button-blue-large" type="submit">Versturen</button>
-
-                </form>
-
-            </div>
-
-            <div id="locaties" class="tab-content">
-                <h2 class="tab-heading">PostNL-punten</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="postnl-punten">Zoek PostNL-punten</label>
-                        <input type="text" id="postnl-punten" name="postcode"
-                            placeholder="Zoek op plaats, straat of postcode">
-                    </div>
-
-                    <button class="button button-blue-large" type="submit">Zoeken</button>
-                </form>
-
-            </div>
-
-            <div id="postcodes" class="tab-content">
-                <h2 class="tab-heading">Postcode zoeken</h2>
-
-                <form class="postcode-form">
-                    <div>
-                        <label for="street">Straat</label>
-                        <input type="text" id="street" name="street" placeholder="Bijv. Hoofdstraat">
-                    </div>
-
-                    <div>
-                        <label for="houseNumber">Huisnummer</label>
-                        <input type="number" id="houseNumber" name="houseNumber" placeholder="Bijv. 12">
-                    </div>
-
-                    <div>
-                        <label for="addition">Toevoeging (niet verplicht)</label>
-                        <input type="text" id="addition" name="addition" placeholder="Bijv. A">
-                    </div>
-
-                    <div>
-                        <label for="city">Woonplaats</label>
-                        <input type="text" id="city" name="city" placeholder="Bijv. Amsterdam">
-                    </div>
-
-                    <button class="button button-blue-large" type="submit">
-                        Zoeken
-                    </button>
-                </form>
-
-            </div>
-        </section>
-
-<div class="zoeken-form-wrapper">
-        <div class="zoeken-form">
-            <label class="text-l" for="search">Ik ben op zoek naar...</label>
-            <form>
-                <input type="search" id="search" placeholder="Wat zoek je?">
-                <button type="submit">🔍</button>
-            </form>
         </div>
-    </div>
-        </section>
 
         <section>
             <div class="subgrid-wrapper">
@@ -222,6 +226,7 @@
                     <a class="card-link" href="#">lees meer</a>
 
                 </div>
+            </div>
         </section>
 
         <section>
@@ -283,7 +288,7 @@
     <footer class="postnl-footer">
         <nav>
 
-            <details >
+            <details>
                 <summary class="text-m">Versturen</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
@@ -292,7 +297,7 @@
                 </ul>
             </details>
 
-            <details >
+            <details>
                 <summary class="text-m">Ontvangen</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
@@ -301,7 +306,7 @@
                 </ul>
             </details>
 
-            <details >
+            <details>
                 <summary class="text-m">Zakelijke oplossingen</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
@@ -310,7 +315,7 @@
                 </ul>
             </details>
 
-            <details >
+            <details>
                 <summary class="text-m">Webshop</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
@@ -319,7 +324,7 @@
                 </ul>
             </details>
 
-            <details >
+            <details>
                 <summary class="text-m">Direct regelen</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
@@ -328,7 +333,7 @@
                 </ul>
             </details>
 
-            <details >
+            <details>
                 <summary class="text-m">PostNL-app</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
@@ -337,7 +342,7 @@
                 </ul>
             </details>
 
-            <details >
+            <details>
                 <summary class="text-m">Hulp</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>
@@ -346,7 +351,7 @@
                 </ul>
             </details>
 
-            <details >
+            <details>
                 <summary class="text-m">Over PostNL</summary>
                 <ul>
                     <li><a href="#link1">Link 1</a></li>

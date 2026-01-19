@@ -8,12 +8,13 @@
   --bg-white: #ffffff;
   --bg-gray: #e3e3e3;
   --bg-accent-gray: #F1F1F2 ;
+  --button-blue:#2E2EFF;
 
   /* Text colors */
   --text-dark-blue: #001a73;
   --text-black: #121212;
   --text-light-blue: #4e4ee2;
-  --text-orange: #E75204FF;
+  --text-orange: #B54003;
 
   /* Card – Red */
   --card-red-main: #d83d00;
@@ -122,8 +123,8 @@ h2.m {
   &.button-transparent-large {
     background: transparent;
     width: 100%;
-    color: var(--card-blue-main);
-    border: 2px solid var(--card-blue-main);
+    color: var(--button-blue);
+    border: 2px solid var(--button-blue);
   }
   
 }

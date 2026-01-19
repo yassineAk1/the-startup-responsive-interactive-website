@@ -18,9 +18,8 @@ header nav {
   align-items: center;
   padding: 1rem;
 
-  .webshop {
+  .webshop li {
     display: flex;
-    height: fit-content;
     gap: 0.25rem;
 
 
