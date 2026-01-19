@@ -108,12 +108,26 @@ header button {
   padding: 3rem 1rem;
   overflow: hidden;
   min-height: 500px;
+
+  @media (min-width:700px){
+    all: unset;
+    display: flex;
+    padding: 4rem 2rem;
+    gap: 10vw;
+    box-sizing: border-box; 
+    
+  }
 }
 
-.hero-content {
+.hero-text-content {
   max-width: 400px;
   position: relative;
   z-index: 2;
+
+  @media (min-width:700px){
+    all: unset;
+width: 40vw;}
+
 }
 
 .hero h1 {
@@ -132,6 +146,13 @@ header button {
   transform: translateX(-50%);
   width: 200px;
   z-index: 1;
+
+  @media (min-width:700px) {
+    all: unset;
+    width: 40vw;
+    height: 20vw;
+  }
+
 }
 
 .hero-secondary-image {
@@ -142,6 +163,10 @@ header button {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+
+  @media (min-width: 700px){
+    display: none;
+  }
 }
 
 .button:hover {
@@ -152,6 +177,14 @@ header button {
 /* ---------------tabs------------- */
 
 
+.tabs-section{
+  @media (min-width:700px){
+display: grid;
+grid-template-rows: 1;
+grid-template-columns: 1fr;
+padding: 2rem 6rem;
+  }
+}
 
 .all-tabs {
   display: flex;
@@ -309,6 +342,16 @@ border-left: 1px solid rgb(176, 176, 176);
     cursor: pointer;
 }
 
+.zoeken-form-wrapper{
+  @media (min-width:700px){
+    display: flex;
+    justify-content: center;
+    
+    .zoeken-form{
+      width: 50vw;
+    }
+  }
+}
 /* ---------------info cards 1,2,3------------- */
 
 
@@ -518,4 +561,30 @@ border-left: 1px solid rgb(176, 176, 176);
 
 .footer-legal-content a:hover {
   text-decoration: underline;
+}
+@media (min-width: 700px) {
+  .postnl-footer nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .postnl-footer details {
+    border-bottom: none;
+    padding: 0;
+  }
+
+.postnl-footer ::details-content{
+  content-visibility: auto;
+}
+
+  .postnl-footer summary {
+    margin-bottom: 1rem;
+    cursor: default;
+    list-style: none;
+    pointer-events: none; 
+  }
+  
+ 
+  
 }
