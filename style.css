@@ -358,21 +358,55 @@ border-left: 1px solid rgb(176, 176, 176);
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 2rem;
-  margin: 1rem;
+  padding: 2rem 1rem;
 
+  @media (min-width: 700px){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; 
+  }
+
+    @media (min-width: 1000px) {
+      padding: 2rem 6rem;
+      grid-template-columns: repeat(3, minmax(300px, 350px));
+      justify-content: center;
+  
+  
+    }
 
   .info-card {
     color: var(--bg-white);
     display: grid;
     grid-template-rows: 1fr auto;
     border-radius: 8px;
-    height: 350px;
-    overflow: hidden;
+    height: 400px;
 
+    @media (min-width: 700px){
+      display: grid;
+      grid-row: span 4; 
+      grid-template-rows: subgrid; 
+      overflow: hidden;
+              h3 {
+          font-size: clamp(1.5rem, 1.5vw + 0.5rem, 2rem);
+        }
+  
+        p, a {
+          font-size: clamp(1rem, 0.5vw + 0.9rem, 2rem);
+        }
 
-    
     }
+
+    .card-content {
+      @media (min-width: 700px){
+        display: grid;
+        grid-row: span 4; 
+        grid-template-rows: subgrid; 
+        align-items: center;
+      }
+    }
+
   }
+}
 
 /* ook gebruikt voor post-card */
 .card-content {
@@ -429,22 +463,46 @@ border-left: 1px solid rgb(176, 176, 176);
 
 .image-card {
   background-color: var(--bg-gray);
-  margin-bottom: 1rem;
-
+  margin: 3rem 0;
 
   .image-card-text {
-    height: 250px;
+    height: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: clamp(0.25rem, 1vw + 0.5rem, 1rem);
+
+    @media (min-width:700px) {
+      padding: clamp(3rem, 2vw + 2rem, 10rem);
+      h2 {
+        font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+      }
+      p {
+        font-size: clamp(1rem, 0.5vw + 1rem, 2rem);
+      }
+    }
+
   }
 }
 
+.image-card{
+  @media (min-width:700px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    img{
+      height: 100%;
+      object-fit: cover; 
+    }
+  }
+
+}
 
 /* ---------------create acount card------------- */
 
-.account-card{
+.account-card {
   background-color: var(--bg-accent-gray);
   display: flex;
   flex-direction: column;
@@ -452,13 +510,42 @@ border-left: 1px solid rgb(176, 176, 176);
   padding: 1rem;
   margin: 1rem;
   justify-content: space-between;
-  height: 400px;
+  gap: 1rem;
 
-  img{
-    align-self: center;
-    max-width: fit-content;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  
+}
+
+.account-card.card-1 {
+  @media(min-width:700px) {
+    all: unset;
+    display: flex;
+    gap: 1rem;
+    padding-block: 3rem;
+    padding-inline: clamp(1rem, 4vw + 0.5rem, 4rem);
+        height: 25vw;
+
+  }
+
+  .card-1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
+
+
+
+  }
+
+.card-1-text li svg {
+    width: 20px;
+    height: 20px;
+    color: var(--text-orange);
+}
 }
 
 
