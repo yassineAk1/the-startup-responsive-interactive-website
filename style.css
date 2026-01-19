@@ -32,7 +32,8 @@ header nav {
 
 .secondary-nav {
   background: var(--bg-white);
-  ul{
+
+  ul {
     display: flex;
     gap: 2rem;
   }
@@ -63,14 +64,14 @@ header button {
 }
 
 .main-nav:has(#zakelijk:target) .zakelijk-knop[href="#zakelijk"],
-.main-nav:has(#consument:target) .consument-knop[href="#consument"]{
+.main-nav:has(#consument:target) .consument-knop[href="#consument"] {
   color: var(--text-orange);
-    background-color: var(--bg-white);
-    padding: 0.5rem 0.75rem 1rem 0.75rem;
-    border-radius: 4px 4px 0 0;
-    font-weight: 700;
-      animation: tabSlideIn ;
-        scroll-margin-top: 100px; 
+  background-color: var(--bg-white);
+  padding: 0.5rem 0.75rem 1rem 0.75rem;
+  border-radius: 4px 4px 0 0;
+  font-weight: 700;
+  animation: tabSlideIn;
+  scroll-margin-top: 100px;
 
 
 }
@@ -85,7 +86,8 @@ header button {
 
 
 
-.zakelijk-knop, .consument-knop {
+.zakelijk-knop,
+.consument-knop {
   transition: 0.25s ease-in;
 
 }
@@ -94,6 +96,7 @@ header button {
   0% {
     opacity: 0.7;
   }
+
   100% {
     opacity: 1;
   }
@@ -108,13 +111,13 @@ header button {
   overflow: hidden;
   min-height: 500px;
 
-  @media (min-width:700px){
+  @media (min-width:700px) {
     all: unset;
     display: flex;
     padding: 4rem 2rem;
     gap: 10vw;
-    box-sizing: border-box; 
-    
+    box-sizing: border-box;
+
   }
 }
 
@@ -123,9 +126,10 @@ header button {
   position: relative;
   z-index: 2;
 
-  @media (min-width:700px){
+  @media (min-width:700px) {
     all: unset;
-width: 40vw;}
+    width: 40vw;
+  }
 
 }
 
@@ -163,7 +167,7 @@ width: 40vw;}
   object-fit: cover;
   z-index: 0;
 
-  @media (min-width: 700px){
+  @media (min-width: 700px) {
     display: none;
   }
 }
@@ -176,12 +180,12 @@ width: 40vw;}
 /* ---------------tabs------------- */
 
 
-.tabs-section{
-  @media (min-width:700px){
-display: grid;
-grid-template-rows: 1;
-grid-template-columns: 1fr;
-padding: 2rem 6rem;
+.tabs-section {
+  @media (min-width:700px) {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr;
+    padding: 2rem 6rem;
   }
 }
 
@@ -191,7 +195,7 @@ padding: 2rem 6rem;
 }
 
 .tab {
-  background-color: var(--bg-gray); 
+  background-color: var(--bg-gray);
   border: none;
   cursor: pointer;
   width: 100%;
@@ -204,7 +208,7 @@ padding: 2rem 6rem;
   justify-content: center;
   text-align: center;
   border-radius: 6px 6px 0 0;
-  padding: 1rem; 
+  padding: 1rem;
 }
 
 .tab img {
@@ -217,10 +221,10 @@ padding: 2rem 6rem;
 .tabs-section:has(#postcodes:target) .tab[href="#postcodes"] {
   background-color: var(--bg-accent-gray);
 
-img{
-    filter:hue-rotate(120deg);
+  img {
+    filter: hue-rotate(120deg);
 
-}
+  }
 }
 
 
@@ -228,7 +232,7 @@ img{
 .tab-content {
   display: none;
   padding: 1rem;
-  scroll-margin-top: 275px; 
+  scroll-margin-top: 275px;
 
 }
 
@@ -244,113 +248,137 @@ img{
 
 .tabs-section:not(:has(:target)) .tab[href="#volg"] {
   background-color: var(--bg-accent-gray);
-    filter:hue-rotate(120deg);
+  filter: hue-rotate(120deg);
 
 }
 
 .tab-content form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1rem;
 
 }
 
 .tab-content input,
 .tab-content select {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 4px;
-    outline: auto var(--bg-gray);
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  outline: auto var(--bg-gray);
 
-    &:focus{
-      outline: 1px solid var(--card-blue-secondary);
+  &:focus {
+    outline: 1px solid var(--card-blue-secondary);
 
-    }
+  }
 
 }
 
 /*---------------- tab animaties-------------- */
 .tab {
-transition: box-shadow 0.2s , filter 0.2s ;
-border-left: 1px solid rgb(176, 176, 176);
+  transition: box-shadow 0.2s, filter 0.2s;
+  border-left: 1px solid rgb(176, 176, 176);
 
 }
 
 .tab:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    filter: brightness(0.90);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  filter: brightness(0.90);
 }
 
 .tab:hover img {
-    animation: iconBounce 0.7s;
-    animation-iteration-count: infinite;
+  animation: iconBounce 0.7s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes iconBounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 .tab:active {
-    animation: tabScale 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: tabScale 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 @keyframes tabScale {
-    0% { transform: scale(1); }
-    50% { transform: scale(0.92); }
-    100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.92);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .tab:active img {
-    animation: iconClickSpin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: iconClickSpin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 @keyframes iconClickSpin {
-    0% { transform: rotate(0deg) scale(1); }
-    50% { transform: rotate(180deg) scale(1.15); }
-    100% { transform: rotate(360deg) scale(1); }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.15);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 
 /* ---------------zoeken form------------- */
 .zoeken-form label {
-    display: flex;
-    justify-content: center;
-    padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
 }
 
 .zoeken-form form {
-    display: flex;
-    margin: 1em;
+  display: flex;
+  margin: 1em;
 }
 
 .zoeken-form input {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border: 2px solid #ddd;
-    border-right: none;
-    border-radius: 4px 0 0 4px;
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #ddd;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .zoeken-form button {
-    background: var(--card-blue-main);
-    border: none;
-    padding: 0 1rem;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
+  background: var(--card-blue-main);
+  border: none;
+  padding: 0 1rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
-.zoeken-form-wrapper{
-  @media (min-width:700px){
+.zoeken-form-wrapper {
+  @media (min-width:700px) {
     display: flex;
     justify-content: center;
-    
-    .zoeken-form{
+
+    .zoeken-form {
       width: 50vw;
     }
   }
 }
+
 /* ---------------info cards 1,2,3------------- */
 
 
@@ -360,19 +388,19 @@ border-left: 1px solid rgb(176, 176, 176);
   gap: 2rem;
   padding: 2rem 1rem;
 
-  @media (min-width: 700px){
+  @media (min-width: 700px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto; 
+    grid-template-rows: auto;
   }
 
-    @media (min-width: 1000px) {
-      padding: 2rem 6rem;
-      grid-template-columns: repeat(3, minmax(300px, 350px));
-      justify-content: center;
-  
-  
-    }
+  @media (min-width: 1000px) {
+    padding: 2rem 6rem;
+    grid-template-columns: repeat(3, minmax(300px, 350px));
+    justify-content: center;
+
+
+  }
 
   .info-card {
     color: var(--bg-white);
@@ -381,26 +409,28 @@ border-left: 1px solid rgb(176, 176, 176);
     border-radius: 8px;
     height: 400px;
 
-    @media (min-width: 700px){
+    @media (min-width: 700px) {
       display: grid;
-      grid-row: span 4; 
-      grid-template-rows: subgrid; 
+      grid-row: span 4;
+      grid-template-rows: subgrid;
       overflow: hidden;
-              h3 {
-          font-size: clamp(1.5rem, 1.5vw + 0.5rem, 2rem);
-        }
-  
-        p, a {
-          font-size: clamp(1rem, 0.5vw + 0.9rem, 2rem);
-        }
+
+      h3 {
+        font-size: clamp(1.5rem, 1.5vw + 0.5rem, 2rem);
+      }
+
+      p,
+      a {
+        font-size: clamp(1rem, 0.5vw + 0.9rem, 2rem);
+      }
 
     }
 
     .card-content {
-      @media (min-width: 700px){
+      @media (min-width: 700px) {
         display: grid;
-        grid-row: span 4; 
-        grid-template-rows: subgrid; 
+        grid-row: span 4;
+        grid-template-rows: subgrid;
         align-items: center;
       }
     }
@@ -410,18 +440,18 @@ border-left: 1px solid rgb(176, 176, 176);
 
 /* ook gebruikt voor post-card */
 .card-content {
-      padding: 1.5rem 1rem;
-      display: flex;
-      gap: 1rem;
-      flex-direction: column;
-      
+  padding: 1.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 
-      img {
-        max-width: fit-content;
 
-        
-      }
-    }
+  img {
+    max-width: fit-content;
+
+
+  }
+}
 
 
 .info-card:nth-of-type(1) .card-content {
@@ -438,7 +468,7 @@ border-left: 1px solid rgb(176, 176, 176);
 
 .info-card:nth-of-type(1) .card-link {
   color: var(--bg-white);
-  background-color:var(--card-red-secondary);
+  background-color: var(--card-red-secondary);
   padding: 1em;
 }
 
@@ -475,9 +505,11 @@ border-left: 1px solid rgb(176, 176, 176);
 
     @media (min-width:700px) {
       padding: clamp(3rem, 2vw + 2rem, 10rem);
+
       h2 {
         font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
       }
+
       p {
         font-size: clamp(1rem, 0.5vw + 1rem, 2rem);
       }
@@ -486,15 +518,15 @@ border-left: 1px solid rgb(176, 176, 176);
   }
 }
 
-.image-card{
-  @media (min-width:700px){
+.image-card {
+  @media (min-width:700px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
 
-    img{
+    img {
       height: 100%;
-      object-fit: cover; 
+      object-fit: cover;
     }
   }
 
@@ -526,7 +558,7 @@ border-left: 1px solid rgb(176, 176, 176);
     gap: 1rem;
     padding-block: 3rem;
     padding-inline: clamp(1rem, 4vw + 0.5rem, 4rem);
-        height: 25vw;
+    height: 25vw;
 
   }
 
@@ -541,17 +573,17 @@ border-left: 1px solid rgb(176, 176, 176);
 
   }
 
-.card-1-text li svg {
+  .card-1-text li svg {
     width: 20px;
     height: 20px;
     color: var(--text-orange);
-}
+  }
 }
 
 
 /* ---------------post cards------------- */
 
-.post-card{
+.post-card {
   border-radius: 6px;
   background-color: var(--bg-accent-gray);
   margin: 1rem;
@@ -559,20 +591,20 @@ border-left: 1px solid rgb(176, 176, 176);
   grid-template-rows: 1fr auto;
   height: 380px;
 
-  .card-content{
+  .card-content {
     padding: 1.5rem;
   }
 
   .card-content .car-post-icon {
-  margin-left: -2.5rem; 
-}
+    margin-left: -2.5rem;
+  }
 
-.post-card-link{
-  background-color: #E6E7EA;
-  padding: 1rem;
-  text-decoration: none;
-  border-radius: 0 0 6px 6px;
-}
+  .post-card-link {
+    background-color: #E6E7EA;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 0 0 6px 6px;
+  }
 
 }
 
@@ -648,6 +680,7 @@ border-left: 1px solid rgb(176, 176, 176);
 .footer-legal-content a:hover {
   text-decoration: underline;
 }
+
 @media (min-width: 700px) {
   .postnl-footer nav {
     display: grid;
@@ -660,17 +693,17 @@ border-left: 1px solid rgb(176, 176, 176);
     padding: 0;
   }
 
-.postnl-footer ::details-content{
-  content-visibility: auto;
-}
+  .postnl-footer ::details-content {
+    content-visibility: auto;
+  }
 
   .postnl-footer summary {
     margin-bottom: 1rem;
     cursor: default;
     list-style: none;
-    pointer-events: none; 
+    pointer-events: none;
   }
-  
- 
-  
+
+
+
 }
