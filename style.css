@@ -109,15 +109,25 @@ header button {
   background: var(--bg-white);
   padding: 3rem 1rem;
   overflow: hidden;
-  min-height: 500px;
+  min-height: 450px;
 
   @media (min-width:700px) {
     all: unset;
     display: flex;
-    padding: 4rem 2rem;
-    gap: 10vw;
+    padding-block: clamp(2rem, 3vh, 4rem);
+    padding-inline: clamp(2rem, 5vw + 1rem, 8rem);
+    gap: 5vw;
     box-sizing: border-box;
 
+
+  }
+}
+
+.hero-desktop-wrapper {
+  @media (min-width: 700px) {
+    background-image: url("assets/postlijn-desktop.svg");
+    background-size: 80% auto;
+    background-repeat: no-repeat;
   }
 }
 
@@ -129,6 +139,17 @@ header button {
   @media (min-width:700px) {
     all: unset;
     width: 40vw;
+
+    h1 {
+      font-size: clamp(1.5rem, 2vw + 0.5rem, 4rem);
+    }
+
+    p,
+    a {
+      font-size: clamp(1rem, 0.5vw + 1rem, 2rem);
+
+    }
+
   }
 
 }
@@ -152,8 +173,8 @@ header button {
 
   @media (min-width:700px) {
     all: unset;
-    width: 40vw;
-    height: 20vw;
+    width: clamp(25vw, 30vw, 40vw);
+    height: auto;
   }
 
 }
@@ -182,10 +203,11 @@ header button {
 
 .tabs-section {
   @media (min-width:700px) {
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 1fr;
-    padding: 2rem 6rem;
+    margin: 0 auto;
+    padding: 1rem 6rem;
+    max-width: 1500px;
+    height: auto;
+    justify-content: center;
   }
 }
 
@@ -232,7 +254,11 @@ header button {
 .tab-content {
   display: none;
   padding: 1rem;
-  scroll-margin-top: 275px;
+  scroll-margin-top: 300px;
+
+  @media(min-width:700px) {
+    scroll-margin-top: 1000px;
+  }
 
 }
 
@@ -258,6 +284,10 @@ header button {
   gap: 1.25rem;
   padding: 1rem;
 
+  input,
+  select {
+    font-family: var(--font-body);
+  }
 }
 
 .tab-content input,
@@ -275,15 +305,12 @@ header button {
 }
 
 /*---------------- tab animaties-------------- */
-.tab {
-  transition: box-shadow 0.2s, filter 0.2s;
-  border-left: 1px solid rgb(176, 176, 176);
-
-}
 
 .tab:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   filter: brightness(0.90);
+  transition: box-shadow 0.2s, filter 0.2s;
+  border-right: 1px solid rgb(176, 176, 176);
 }
 
 .tab:hover img {
@@ -398,8 +425,6 @@ header button {
     padding: 2rem 6rem;
     grid-template-columns: repeat(3, minmax(300px, 350px));
     justify-content: center;
-
-
   }
 
   .info-card {
@@ -407,7 +432,7 @@ header button {
     display: grid;
     grid-template-rows: 1fr auto;
     border-radius: 8px;
-    height: 400px;
+    overflow: hidden;
 
     @media (min-width: 700px) {
       display: grid;
@@ -415,13 +440,14 @@ header button {
       grid-template-rows: subgrid;
       overflow: hidden;
 
+
       h3 {
-        font-size: clamp(1.5rem, 1.5vw + 0.5rem, 2rem);
+        font-size: clamp(1.25rem, 1.5vw + 0.5rem, 2rem);
       }
 
       p,
       a {
-        font-size: clamp(1rem, 0.5vw + 0.9rem, 2rem);
+        font-size: clamp(1rem, 0.5vw + 0.9rem, 1.75rem);
       }
 
     }
@@ -541,7 +567,7 @@ header button {
   border-radius: 6px;
   padding: 1rem;
   margin: 1rem;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
 
   img {
@@ -551,26 +577,35 @@ header button {
   }
 }
 
-.account-card.card-1 {
+.account-card.card-1,
+.account-card.card-2 {
   @media(min-width:700px) {
-    all: unset;
+    background-color: var(--bg-white);
     display: flex;
+    flex-direction: row;
     gap: 1rem;
     padding-block: 3rem;
-    padding-inline: clamp(1rem, 4vw + 0.5rem, 4rem);
-    height: 25vw;
+    padding-inline: clamp(5rem, 5vw + 2rem, 10rem);
+
+
+    &.card-2 {
+      flex-direction: row-reverse;
+      gap: clamp(5rem, 5vw + 2rem, 10rem);
+    }
 
   }
 
-  .card-1-text {
+  .card-1-text,
+  .card-2-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
     font-size: clamp(1rem, 1vw + 0.5rem, 2rem);
 
-
-
+    & h3 {
+      color: var(--text-orange);
+    }
   }
 
   .card-1-text li svg {
@@ -578,6 +613,8 @@ header button {
     height: 20px;
     color: var(--text-orange);
   }
+
+
 }
 
 
@@ -608,6 +645,20 @@ header button {
 
 }
 
+.post-card-wrapper {
+  @media (min-width:700px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-block: 3rem;
+    padding-inline: clamp(2rem, 4vw + 1rem, 4rem);
+
+    img {
+      height: clamp(5rem, 5vw + 3rem, 10rem);
+      width: auto;
+    }
+  }
+}
+
 
 
 
@@ -622,11 +673,22 @@ header button {
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 2rem;
+
+  @media (min-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
 }
 
 .postnl-footer details {
   border-bottom: 1px solid #d1d1d1;
   padding: 1rem 0;
+
+  @media (min-width: 700px) {
+    border-bottom: none;
+    padding: 0;
+  }
 }
 
 .postnl-footer summary {
@@ -634,6 +696,13 @@ header button {
   color: var(--text-dark-blue);
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 700px) {
+    margin-bottom: 1rem;
+    cursor: default;
+    list-style: none;
+    pointer-events: none;
+  }
 }
 
 .postnl-footer details ul {
@@ -660,7 +729,6 @@ header button {
   margin-bottom: 1.5rem;
 }
 
-
 .footer-logo-content img {
   height: 2rem;
 }
@@ -681,29 +749,8 @@ header button {
   text-decoration: underline;
 }
 
-@media (min-width: 700px) {
-  .postnl-footer nav {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-  }
-
-  .postnl-footer details {
-    border-bottom: none;
-    padding: 0;
-  }
-
-  .postnl-footer ::details-content {
+.postnl-footer ::details-content {
+  @media (min-width: 700px) {
     content-visibility: auto;
   }
-
-  .postnl-footer summary {
-    margin-bottom: 1rem;
-    cursor: default;
-    list-style: none;
-    pointer-events: none;
-  }
-
-
-
 }
