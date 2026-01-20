@@ -35,7 +35,11 @@
 
             <ul>
                 <li><button>Inloggen</button></li>
-                <li><button>Menu</button></li>
+                <li><button>Menu <svg width="28" height="12" viewBox="0 0 28 16" fill="none">
+                            <path d="M2 2 L24 2 L26 4 L4 4 Z" fill="currentColor" />
+                            <path d="M2 7 L24 7 L26 9 L4 9 Z" fill="currentColor" />
+                            <path d="M2 12 L24 12 L26 14 L4 14 Z" fill="currentColor" />
+                        </svg></button></li>
             </ul>
         </nav>
 
@@ -56,29 +60,31 @@
                 </div>
             </section>
 
-            <section class="tabs-section">
+            <article class="tabs-section">
                 <div class="all-tabs">
+
                     <a href="#volg" class="tab">Volgen
                         <img src="assets/icon1.svg" alt="">
                     </a>
+
                     <a href="#versturen" class="tab">Versturen
                         <img src="assets/icon2.svg" alt="">
-
                     </a>
+
                     <a href="#locaties" class="tab">PostNL-punten
                         <img src="assets/icon3.svg" alt="">
-
                     </a>
+
                     <a href="#postcodes" class="tab">Postcodes
                         <img src="assets/icon4.svg" alt="">
-
                     </a>
+
                 </div>
 
                 <div id="volg" class="tab-content">
                     <h2 class="tab-heading">Volg je pakket</h2>
-
                     <form>
+
                         <div>
                             <label for="barcode">Barcode of niet-thuiscode</label>
                             <input type="text" id="barcode" name="barcode" required
@@ -99,6 +105,7 @@
                         </div>
 
                         <button class="button button-blue-large" type="submit">Zoeken</button>
+
                     </form>
                 </div>
 
@@ -130,9 +137,7 @@
                             </select>
                         </div>
                         <button class="button button-blue-large" type="submit">Versturen</button>
-
                     </form>
-
                 </div>
 
                 <div id="locaties" class="tab-content">
@@ -146,7 +151,6 @@
 
                         <button class="button button-blue-large" type="submit">Zoeken</button>
                     </form>
-
                 </div>
 
                 <div id="postcodes" class="tab-content">
@@ -177,12 +181,11 @@
                             Zoeken
                         </button>
                     </form>
-
                 </div>
-            </section>
+            </article>
 
-            <div class="zoeken-form-wrapper">
-                <div class="zoeken-form">
+            <div class="search-form-wrapper">
+                <div class="search-form">
                     <label class="text-l" for="search">Ik ben op zoek naar...</label>
                     <form>
                         <input type="search" id="search" placeholder="Wat zoek je?">
@@ -190,45 +193,41 @@
                     </form>
                 </div>
             </div>
-        
 
-        <section>
-            <div class="subgrid-wrapper">
-                <div class="info-card">
-                    <div class="card-content">
-                        <img src="assets/plant-icon.svg" alt="">
-                        <h3>Voorkeuren bezorging</h3>
-                        <p>Vaag op pad? Bepaal zelf waar we je pakketjes bezorgen</p>
+
+            <section>
+                <div class="subgrid-wrapper">
+                    <div class="info-card">
+                        <div class="card-content">
+                            <img src="assets/plant-icon.svg" alt="">
+                            <h3>Voorkeuren bezorging</h3>
+                            <p>Vaag op pad? Bepaal zelf waar we je pakketjes bezorgen</p>
+                        </div>
+                        <a class="card-link" href="#">lees meer</a>
                     </div>
 
-                    <a class="card-link" href="#">lees meer</a>
-                </div>
 
-
-                <div class="info-card">
-                    <div class="card-content">
-
-                        <img src="assets/track-icon.svg" alt="">
-                        <h3>Track & Trace wereldwijd</h3>
-                        <p>Track & Trace ook op de kleinste pakjes naar het buitenland, naar wel 79 landen.</p>
+                    <div class="info-card">
+                        <div class="card-content">
+                            <img src="assets/track-icon.svg" alt="">
+                            <h3>Track & Trace wereldwijd</h3>
+                            <p>Track & Trace ook op de kleinste pakjes naar het buitenland, naar wel 79 landen.</p>
+                        </div>
+                        <a class="card-link" href="#">lees meer</a>
                     </div>
-                    <a class="card-link" href="#">lees meer</a>
 
-                </div>
+                    <div class="info-card">
+                        <div class="card-content">
+                            <img src="assets/hand-icon.svg" alt="">
+                            <h3>Nu 1 postegel nodig?</h3>
+                            <p>Verstuur je brief of kaart met een postzegelcode</p>
+                        </div>
+                        <a class="card-link" href="#">lees meer</a>
 
-                <div class="info-card">
-                    <div class="card-content">
-
-                        <img src="assets/hand-icon.svg" alt="">
-                        <h3>Nu 1 postegel nodig?</h3>
-                        <p>Verstuur je brief of kaart met een postzegelcode</p>
                     </div>
-                    <a class="card-link" href="#">lees meer</a>
-
                 </div>
-            </div>
-        </section>
-</div>
+            </section>
+        </div>
         <section>
             <div class="image-card">
                 <div>
@@ -281,7 +280,6 @@
                             Curabitur blandit tempus
                         </li>
                     </ul>
-
                     <a class="button button-transparent-large" href="#">Maak een account aan</a>
                 </div>
             </div>
@@ -323,100 +321,100 @@
     </main>
 
     <footer class="postnl-footer">
-    <nav>
+        <nav>
 
-        <details>
-            <summary class="text-m">Versturen</summary>
-            <ul>
-                <li><a href="#pakket-versturen">Pakket versturen</a></li>
-                <li><a href="#brief-kaart-versturen">Brief of kaart versturen</a></li>
-                <li><a href="#postzegels">Postzegels</a></li>
-                <li><a href="#tarieven">Tarieven</a></li>
-                <li><a href="#online-frankeren">Online frankeren</a></li>
-                <li><a href="#postzegels-kopen">Postzegels kopen</a></li>
-                <li><a href="#postnl-punten">PostNL-punten</a></li>
-            </ul>
-        </details>
+            <details>
+                <summary class="text-m">Versturen</summary>
+                <ul>
+                    <li><a href="#pakket-versturen">Pakket versturen</a></li>
+                    <li><a href="#brief-kaart-versturen">Brief of kaart versturen</a></li>
+                    <li><a href="#postzegels">Postzegels</a></li>
+                    <li><a href="#tarieven">Tarieven</a></li>
+                    <li><a href="#online-frankeren">Online frankeren</a></li>
+                    <li><a href="#postzegels-kopen">Postzegels kopen</a></li>
+                    <li><a href="#postnl-punten">PostNL-punten</a></li>
+                </ul>
+            </details>
 
-        <details>
-            <summary class="text-m">Ontvangen</summary>
-            <ul>
-                <li><a href="#post-ontvangen">Post ontvangen</a></li>
-                <li><a href="#pakket-ontvangen">Pakket ontvangen</a></li>
-                <li><a href="#post-doorsturen">Post doorsturen</a></li>
-                <li><a href="#track-trace">Track & Trace</a></li>
-                <li><a href="#verhuisservice">Verhuisservice</a></li>
-                <li><a href="#portokosten">Portokosten</a></li>
-                <li><a href="#postbus-aanvragen">Postbus aanvragen</a></li>
-            </ul>
-        </details>
+            <details>
+                <summary class="text-m">Ontvangen</summary>
+                <ul>
+                    <li><a href="#post-ontvangen">Post ontvangen</a></li>
+                    <li><a href="#pakket-ontvangen">Pakket ontvangen</a></li>
+                    <li><a href="#post-doorsturen">Post doorsturen</a></li>
+                    <li><a href="#track-trace">Track & Trace</a></li>
+                    <li><a href="#verhuisservice">Verhuisservice</a></li>
+                    <li><a href="#portokosten">Portokosten</a></li>
+                    <li><a href="#postbus-aanvragen">Postbus aanvragen</a></li>
+                </ul>
+            </details>
 
-        <details>
-            <summary class="text-m">Zakelijke oplossingen</summary>
-            <ul>
-                <li><a href="#zakelijk-versturen">Post versturen</a></li>
-                <li><a href="#zakelijk-pakket">Pakket versturen</a></li>
-                <li><a href="#logistieke-oplossingen">Logistieke oplossingen</a></li>
-                <li><a href="#zakelijk-ontvangen">Ontvangen</a></li>
-                <li><a href="#data-oplossingen">Data oplossingen</a></li>
-                <li><a href="#ecommerce">E-commerceplan</a></li>
-                <li><a href="#klant-worden">Klant worden</a></li>
-            </ul>
-        </details>
+            <details>
+                <summary class="text-m">Zakelijke oplossingen</summary>
+                <ul>
+                    <li><a href="#zakelijk-versturen">Post versturen</a></li>
+                    <li><a href="#zakelijk-pakket">Pakket versturen</a></li>
+                    <li><a href="#logistieke-oplossingen">Logistieke oplossingen</a></li>
+                    <li><a href="#zakelijk-ontvangen">Ontvangen</a></li>
+                    <li><a href="#data-oplossingen">Data oplossingen</a></li>
+                    <li><a href="#ecommerce">E-commerceplan</a></li>
+                    <li><a href="#klant-worden">Klant worden</a></li>
+                </ul>
+            </details>
 
-        <details>
-            <summary class="text-m">Webshop</summary>
-            <ul>
-                <li><a href="#postzegels-shop">Postzegels</a></li>
-                <li><a href="#verpakkingen">Verpakkingen</a></li>
-                <li><a href="#kantoorartikelen">Kantoorartikelen</a></li>
-                <li><a href="#cadeaus">Cadeaus</a></li>
-                <li><a href="#collect-club">Collect Club</a></li>
-                <li><a href="#zakelijke-hulpmiddelen">Zakelijke hulpmiddelen</a></li>
-            </ul>
-        </details>
+            <details>
+                <summary class="text-m">Webshop</summary>
+                <ul>
+                    <li><a href="#postzegels-shop">Postzegels</a></li>
+                    <li><a href="#verpakkingen">Verpakkingen</a></li>
+                    <li><a href="#kantoorartikelen">Kantoorartikelen</a></li>
+                    <li><a href="#cadeaus">Cadeaus</a></li>
+                    <li><a href="#collect-club">Collect Club</a></li>
+                    <li><a href="#zakelijke-hulpmiddelen">Zakelijke hulpmiddelen</a></li>
+                </ul>
+            </details>
 
-        <details>
-            <summary class="text-m">Direct regelen</summary>
-            <ul>
-                <li><a href="#track-trace-direct">Track & Trace</a></li>
-                <li><a href="#postcode-zoeken">Postcode zoeken</a></li>
-                <li><a href="#versturen-direct">Versturen</a></li>
-                <li><a href="#postnl-punten-zoeken">PostNL-punten</a></li>
-            </ul>
-        </details>
+            <details>
+                <summary class="text-m">Direct regelen</summary>
+                <ul>
+                    <li><a href="#track-trace-direct">Track & Trace</a></li>
+                    <li><a href="#postcode-zoeken">Postcode zoeken</a></li>
+                    <li><a href="#versturen-direct">Versturen</a></li>
+                    <li><a href="#postnl-punten-zoeken">PostNL-punten</a></li>
+                </ul>
+            </details>
 
-        <details>
-            <summary class="text-m">PostNL-app</summary>
-            <ul>
-                <li><a href="#ios-app">iOS</a></li>
-                <li><a href="#android-app">Android</a></li>
-            </ul>
-        </details>
+            <details>
+                <summary class="text-m">PostNL-app</summary>
+                <ul>
+                    <li><a href="#ios-app">iOS</a></li>
+                    <li><a href="#android-app">Android</a></li>
+                </ul>
+            </details>
 
-        <details>
-            <summary class="text-m">Hulp</summary>
-            <ul>
-                <li><a href="#">Service & Contact</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">Algemene voorwaarden</a></li>
-                <li><a href="#">Toegankelijkheid</a></li>
-                <li><a href="#">Phishing</a></li>
-            </ul>
-        </details>
+            <details>
+                <summary class="text-m">Hulp</summary>
+                <ul>
+                    <li><a href="#">Service & Contact</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Algemene voorwaarden</a></li>
+                    <li><a href="#">Toegankelijkheid</a></li>
+                    <li><a href="#">Phishing</a></li>
+                </ul>
+            </details>
 
-        <details>
-            <summary class="text-m">Over PostNL</summary>
-            <ul>
-                <li><a href="#">Over PostNL</a></li>
-                <li><a href="#">Beleggers</a></li>
-                <li><a href="#">Pers en nieuws</a></li>
-                <li><a href="#">Werken bij PostNL</a></li>
-            </ul>
-        </details>
+            <details>
+                <summary class="text-m">Over PostNL</summary>
+                <ul>
+                    <li><a href="#">Over PostNL</a></li>
+                    <li><a href="#">Beleggers</a></li>
+                    <li><a href="#">Pers en nieuws</a></li>
+                    <li><a href="#">Werken bij PostNL</a></li>
+                </ul>
+            </details>
 
-    </nav>
+        </nav>
 
         <div class="footer-logo-content">
             <img src="assets/Logo.svg" alt="">
