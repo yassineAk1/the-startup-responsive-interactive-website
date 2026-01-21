@@ -12,6 +12,7 @@
 
 <body>
     <header>
+        <a href="#main" class="skip">Skip to main content</a>
         <nav class="main-nav">
             <ul class="link-buttons-nav">
                 <li><a class="consument-knop" id="consument" href="#consument">Consument</a></li>
@@ -31,7 +32,7 @@
             </a>
             <ul>
                 <li><button>Inloggen</button></li>
-                <li><button>Menu 
+                <li><button popovertarget="hamburger-menu" class="hamburger-menu">Menu 
                         <svg width="28" height="12" viewBox="0 0 28 16" fill="none">
                             <path d="M2 2 L24 2 L26 4 L4 4 Z" fill="currentColor" />
                             <path d="M2 7 L24 7 L26 9 L4 9 Z" fill="currentColor" />
@@ -41,9 +42,10 @@
                 </li>
             </ul>
         </nav>
+        <div class="menu-popover" popover id="hamburger-menu"></div>
     </header>
 
-    <main>
+    <main id="main">
         <div class="hero-desktop-wrapper">
             <section class="hero">
                 <div class="hero-text-content">
@@ -297,69 +299,69 @@
             <details>
                 <summary class="text-m">Versturen</summary>
                 <ul>
-                    <li><a href="#pakket-versturen">Pakket versturen</a></li>
-                    <li><a href="#brief-kaart-versturen">Brief of kaart versturen</a></li>
-                    <li><a href="#postzegels">Postzegels</a></li>
-                    <li><a href="#tarieven">Tarieven</a></li>
-                    <li><a href="#online-frankeren">Online frankeren</a></li>
-                    <li><a href="#postzegels-kopen">Postzegels kopen</a></li>
-                    <li><a href="#postnl-punten">PostNL-punten</a></li>
+                    <li><a href="#">Pakket versturen</a></li>
+                    <li><a href="#">Brief of kaart versturen</a></li>
+                    <li><a href="#">Postzegels</a></li>
+                    <li><a href="#">Tarieven</a></li>
+                    <li><a href="#">Online frankeren</a></li>
+                    <li><a href="#">Postzegels kopen</a></li>
+                    <li><a href="#">PostNL-punten</a></li>
                 </ul>
             </details>
 
             <details>
                 <summary class="text-m">Ontvangen</summary>
                 <ul>
-                    <li><a href="#post-ontvangen">Post ontvangen</a></li>
-                    <li><a href="#pakket-ontvangen">Pakket ontvangen</a></li>
-                    <li><a href="#post-doorsturen">Post doorsturen</a></li>
-                    <li><a href="#track-trace">Track & Trace</a></li>
-                    <li><a href="#verhuisservice">Verhuisservice</a></li>
-                    <li><a href="#portokosten">Portokosten</a></li>
-                    <li><a href="#postbus-aanvragen">Postbus aanvragen</a></li>
+                    <li><a href="#">Post ontvangen</a></li>
+                    <li><a href="#">Pakket ontvangen</a></li>
+                    <li><a href="#">Post doorsturen</a></li>
+                    <li><a href="#">Track & Trace</a></li>
+                    <li><a href="#">Verhuisservice</a></li>
+                    <li><a href="#">Portokosten</a></li>
+                    <li><a href="#">Postbus aanvragen</a></li>
                 </ul>
             </details>
 
             <details>
                 <summary class="text-m">Zakelijke oplossingen</summary>
                 <ul>
-                    <li><a href="#zakelijk-versturen">Post versturen</a></li>
-                    <li><a href="#zakelijk-pakket">Pakket versturen</a></li>
-                    <li><a href="#logistieke-oplossingen">Logistieke oplossingen</a></li>
-                    <li><a href="#zakelijk-ontvangen">Ontvangen</a></li>
-                    <li><a href="#data-oplossingen">Data oplossingen</a></li>
-                    <li><a href="#ecommerce">E-commerceplan</a></li>
-                    <li><a href="#klant-worden">Klant worden</a></li>
+                    <li><a href="#">Post versturen</a></li>
+                    <li><a href="#">Pakket versturen</a></li>
+                    <li><a href="#">Logistieke oplossingen</a></li>
+                    <li><a href="#">Ontvangen</a></li>
+                    <li><a href="#">Data oplossingen</a></li>
+                    <li><a href="#">E-commerceplan</a></li>
+                    <li><a href="#">Klant worden</a></li>
                 </ul>
             </details>
 
             <details>
                 <summary class="text-m">Webshop</summary>
                 <ul>
-                    <li><a href="#postzegels-shop">Postzegels</a></li>
-                    <li><a href="#verpakkingen">Verpakkingen</a></li>
-                    <li><a href="#kantoorartikelen">Kantoorartikelen</a></li>
-                    <li><a href="#cadeaus">Cadeaus</a></li>
-                    <li><a href="#collect-club">Collect Club</a></li>
-                    <li><a href="#zakelijke-hulpmiddelen">Zakelijke hulpmiddelen</a></li>
+                    <li><a href="#">Postzegels</a></li>
+                    <li><a href="#">Verpakkingen</a></li>
+                    <li><a href="#">Kantoorartikelen</a></li>
+                    <li><a href="#">Cadeaus</a></li>
+                    <li><a href="#">Collect Club</a></li>
+                    <li><a href="#">Zakelijke hulpmiddelen</a></li>
                 </ul>
             </details>
 
             <details>
                 <summary class="text-m">Direct regelen</summary>
                 <ul>
-                    <li><a href="#track-trace-direct">Track & Trace</a></li>
-                    <li><a href="#postcode-zoeken">Postcode zoeken</a></li>
-                    <li><a href="#versturen-direct">Versturen</a></li>
-                    <li><a href="#postnl-punten-zoeken">PostNL-punten</a></li>
+                    <li><a href="#">Track & Trace</a></li>
+                    <li><a href="#">Postcode zoeken</a></li>
+                    <li><a href="#">Versturen</a></li>
+                    <li><a href="#">PostNL-punten</a></li>
                 </ul>
             </details>
 
             <details>
                 <summary class="text-m">PostNL-app</summary>
                 <ul>
-                    <li><a href="#ios-app">iOS</a></li>
-                    <li><a href="#android-app">Android</a></li>
+                    <li><a href="#">iOS</a></li>
+                    <li><a href="#">Android</a></li>
                 </ul>
             </details>
 

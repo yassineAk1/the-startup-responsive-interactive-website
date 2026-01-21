@@ -5,8 +5,24 @@
   list-style: none;
 }
 
+/* ---------------------POP-OVER------------------------ */
+.menu-popover{
+background-color: aqua;
+}
+
 
 /* ---------------header------------- */
+.skip {
+  position: absolute;
+  left: -100px;
+  top: auto;
+  width: 1px;
+  height: 1px;  
+}
+  .skip:focus {
+  position: static;
+}
+
 header {
   background: var(--bg-white);
 }
