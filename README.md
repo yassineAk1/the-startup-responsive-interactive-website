@@ -17,8 +17,23 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 ### code conventies:  
 
 #### class namen in het engels
+al mijn class namen zijn in het engels om de code beter leesbaar te maken voor iedereen, paar voorbeelden hieronder
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/66991924fc05681033bda7155661a5c754a92a92/index.html#L17
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/66991924fc05681033bda7155661a5c754a92a92/index.html#L51
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/66991924fc05681033bda7155661a5c754a92a92/index.html#L56
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/66991924fc05681033bda7155661a5c754a92a92/index.html#L102
+
+#### Ademruimte HTML
+witregel tussen structuur elementen
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/aaa4a6988de409c96f04def93229f3ab4b912090/index.html#L295-L387
 
 #### nesten van media queries
+media queries worden genest voor betere leesbaarheid, hieronder enekele voorbeelden
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/66991924fc05681033bda7155661a5c754a92a92/style.css#L38-L41
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/66991924fc05681033bda7155661a5c754a92a92/style.css#L164-L176
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/66991924fc05681033bda7155661a5c754a92a92/style.css#L404-L414
+
+
 
 ## Bronnen
 
