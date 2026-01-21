@@ -31,7 +31,7 @@
                 <img src="assets/Logo.svg" alt="PostNL">
             </a>
             <ul>
-                <li><button>Inloggen</button></li>
+                <li><button class="login-button">Inloggen</button></li>
                 <li><button popovertarget="hamburger-menu" class="hamburger-menu-button">Menu
                         <svg width="28" height="12" viewBox="0 0 28 16" fill="none">
                             <path d="M2 2 L24 2 L26 4 L4 4 Z" fill="currentColor" />
@@ -45,7 +45,11 @@
     
         <div class="menu-popover" popover id="hamburger-menu">
             <div class="close-button">
-                <button popovertarget="hamburger-menu">X</button>
+                <button popovertarget="hamburger-menu"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="1" y1="1" x2="23" y2="23" stroke="currentColor" stroke-width="3" />
+                        <line x1="1" y1="23" x2="23" y2="1" stroke="currentColor" stroke-width="3" />
+                    </svg></button>
             </div>
             <nav class="menu-nav">
                 <ul>
