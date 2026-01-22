@@ -168,7 +168,7 @@ header .login-button,
 .main-nav:not(:has(#zakelijk:target)):not(:has(#consument:target)) .consument-knop[href="#consument"] {
   color: var(--text-orange);
   background-color: var(--bg-white);
-  padding: 0.5rem 0.75rem 1rem 0.75rem;
+  padding: 0.5rem 0.75rem 1.25rem 0.75rem;
   border-radius: 4px 4px 0 0;
   font-weight: 700;
 }
