@@ -209,7 +209,7 @@ header .login-button,
 
 .hero-desktop-wrapper {
   @media (min-width: 700px) {
-background-image: url("/assets/postlijn-desktop.svg");
+background-image: url("assets/Postlijn-desktop.svg");
     background-size: 80% auto;
     background-repeat: no-repeat;
   }
