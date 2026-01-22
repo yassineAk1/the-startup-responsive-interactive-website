@@ -174,7 +174,11 @@ https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/66
 
 
 ## Bronnen
-
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target#:~:text=This%20feature%20is%20well%20established,back()%20%2C%20history.
+https://stackoverflow.com/questions/77042256/css-transition-animation-not-working-for-popover-attribute
+https://css-tricks.com/css-target/#:~:text=We'll%20touch%20on%20all,down%20further%20on%20a%20page.
+https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using#:~:text=Transitioning%20a%20popover,are%20not%20by%20default%20animatable.
+https://www.smashingmagazine.com/2025/01/transitioning-top-layer-entries-display-property-css/
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
