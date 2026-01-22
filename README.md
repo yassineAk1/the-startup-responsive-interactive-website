@@ -42,6 +42,12 @@ Ik heb eerst de PostNL huisstijl uitgezocht voordat ik begon:
 ![Image](https://github.com/user-attachments/assets/dd58ceaf-5221-4234-aaaf-4aa5113751c6)
 
 
+### Toegankelijkheid  
+
+Tijdens het bouwen heb ik bewust rekening gehouden met toegankelijkheid en me gehouden aan de WCAG 2.1 AA-richtlijnen. De basis bestaat uit semantische HTML, zodat de pagina logisch te gebruiken is met een screenreader of toetsenbord. Zo heb ik een skiplink toegevoegd, een duidelijke heading-structuur aangehouden en alle formulieren voorzien van zichtbare labels.
+
+Ik heb alle kleuren getest op contrast en een oranje tint aangepast omdat deze niet voldeed aan de AA-contrastnorm. Ook heb ik duidelijke focus states toegevoegd, zodat je altijd ziet waar je bent als je met het toetsenbord navigeert. Het hamburger menu is volledig met toetsenbord te bedienen en sluit automatisch met de Escape-toets.
+
 **Kleurcontrast verbeterd:**
 
 Tijdens een color-contrasttest kwam naar voren dat er twee verschillende oranje tinten zijn gebruikt voor de tekst "Volg je pakket". Deze voldeden allebei niet aan de WCAG-richtlijnen in combinatie met de achtergrond. Daarom is gekozen voor een andere oranje tint die wél minimaal voldoet aan het AA-niveau van de WCAG.
@@ -58,14 +64,14 @@ Tijdens een color-contrasttest kwam naar voren dat er twee verschillende oranje 
 
 <img width="560" alt="Image" src="https://github.com/user-attachments/assets/8d31545b-1367-492a-8c75-16b485f06621" />  
 
+  
+# Interactief  
 
-### interactief
-
-# Tab interactie
+## Tab interactie
 Met de tabs kan je makkelijk switchen tussen de verschillende services zonder de pagina te verversen. Alleen de actieve tab wordt getoond en door kleur, animaties en iconen zie je meteen welke tab actief is en wat er gebeurt bij hover of klik.
 ![Untitledvideo-MadewithClipchamp-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/96d12ef0-b7b8-41fc-bcfa-66eced0b9cf1)
 
-# Popover interactie
+## Popover interactie
 Het menu opent als een popover met een cirkel-animatie vanaf de knop. Zo zie je duidelijk waar het menu vandaan komt. Alles werkt zonder JavaScript.  
 
 ![Bezigmetopnemen2026-01-22113920-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/5a72751a-e742-4718-8028-c0c78e336d10)
@@ -78,6 +84,72 @@ Het menu opent als een popover met een cirkel-animatie vanaf de knop. Zo zie je 
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+### Belangrijke features
+
+**1. Tab-systeem voor services**
+
+Het tab-systeem is het hart van de website. Gebruikers kunnen makkelijk switchen tussen "Volg je pakket", "Versturen", "PostNL-punten" en "Postcodes". Normaal zou je hier JavaScript voor gebruiken, maar ik heb het opgelost met de `:target` pseudo-class van CSS.
+
+**Hoe werkt het:**
+Elke tab is een link met een hash (bijvoorbeeld `#volg`). Als je erop klikt, komt die hash in de URL en kan CSS daar op reageren met `:target`. Het bijbehorende formulier wordt dan getoond terwijl de anderen verborgen blijven.
+
+**Feedback voor de gebruiker:**
+- Actieve tab krijgt grijze achtergrond
+- Icon verandert van blauw naar groen (met `filter: hue-rotate()`)
+- scrollt naar de tab content
+- Box shadow
+
+**Feedforward (wat kan ik verwachten?):**
+- Bij hover bounced het icoontje omhoog en omlaag
+- Tab wordt iets donkerder
+- Schaduw wordt groter
+- Cursor wordt pointer
+  
+```css
+.tab-content {
+  display: none; /* Standaard verstopt */
+}
+
+.tab-content:target {
+  display: block; /* Alleen zichtbaar als de hash matcht */
+  background-color: var(--bg-accent-gray);
+}
+
+/* Eerste tab standaard zichtbaar als er geen hash is */
+.tabs-section:not(:has(:target)) #volg {
+  display: block;
+}
+```
+
+volledige code:
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/103b86b0087f1f6211bd64126186d67559a74bd5/style.css#L285-L359
+
+**2. Hamburger Menu met cirkel-animatie**
+
+Het hamburger menu was een uitdaging vanwege de open en sluit animatie die specifieke features nodig hebben om goe te werken, zoals display: allow discrete en overlay: allow discrete. 
+
+**Waarom een cirkel-animatie?**
+Ik wilde dat het duidelijk is waar het menu vandaan komt. Door de animatie te starten bij de button 90% horizontaal, 10% verticaal.
+```css
+.menu-popover {
+  clip-path: circle(0% at 90% 10%); /* Start klein rechtsboven */
+  transition: all 0.6s ease-in;
+}
+
+.menu-popover:popover-open {
+  clip-path: circle(150% at 90% 10%); /* Breidt uit tot 150% */
+}
+
+/* Starting-style zorgt voor smooth opening */
+@starting-style {
+  .menu-popover:popover-open {
+    clip-path: circle(0% at 90% 10%);
+  }
+}
+```
+
+volledige code:
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/103b86b0087f1f6211bd64126186d67559a74bd5/style.css#L10-L66
 
 ## Naamgeving
 ### code conventies:  
