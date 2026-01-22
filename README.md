@@ -31,6 +31,46 @@ Ik heb gewerkt volgens mobile-first principe. Eerst mobile ontworpen, daarna uit
 - Footer altijd uitgeklapt
 - Grotere fonts met `clamp()` zodat het altijd goed leesbaar blijft
 
+**Schermbreedte > 1600px (desktop):**  
+![Mockup Result (2)](https://github.com/user-attachments/assets/cb72350d-ab5f-44b5-8b0f-dfba539f91b0)
+
+### Huisstijl
+
+Ik heb eerst de PostNL huisstijl uitgezocht voordat ik begon:
+
+![Frame 9846](https://github.com/user-attachments/assets/93f22645-5a25-4c7e-8ccb-5b72dcc3f464)
+![Image](https://github.com/user-attachments/assets/dd58ceaf-5221-4234-aaaf-4aa5113751c6)
+
+
+**Kleurcontrast verbeterd:**
+
+Tijdens een color-contrasttest kwam naar voren dat er twee verschillende oranje tinten zijn gebruikt voor de tekst "Volg je pakket". Deze voldeden allebei niet aan de WCAG-richtlijnen in combinatie met de achtergrond. Daarom is gekozen voor een andere oranje tint die wél minimaal voldoet aan het AA-niveau van de WCAG.
+
+**Resultaten test desktop:**
+
+<img width="1044" alt="Image" src="https://github.com/user-attachments/assets/4096f342-d69e-4e90-9577-0022242ada2f" />
+
+**Resultaten test mobiel:**
+
+<img width="868" alt="Image" src="https://github.com/user-attachments/assets/b64c69a4-2ce2-4868-91aa-63401581f2b7" />
+
+**Verbeterde versie met juiste contrast:**
+
+<img width="560" alt="Image" src="https://github.com/user-attachments/assets/8d31545b-1367-492a-8c75-16b485f06621" />  
+
+
+### interactief
+
+# Tab interactie
+Met de tabs kan je makkelijk switchen tussen de verschillende services zonder de pagina te verversen. Alleen de actieve tab wordt getoond en door kleur, animaties en iconen zie je meteen welke tab actief is en wat er gebeurt bij hover of klik.
+![Untitledvideo-MadewithClipchamp-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/96d12ef0-b7b8-41fc-bcfa-66eced0b9cf1)
+
+# Popover interactie
+Het menu opent als een popover met een cirkel-animatie vanaf de knop. Zo zie je duidelijk waar het menu vandaan komt. Alles werkt zonder JavaScript.  
+
+![Bezigmetopnemen2026-01-22113920-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/5a72751a-e742-4718-8028-c0c78e336d10)
+
+
 
 
 <!-- Voeg een mooie poster visual toe 📸 -->
