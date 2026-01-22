@@ -156,7 +156,7 @@ header .login-button,
 .main-nav:has(#consument:target) .consument-knop[href="#consument"] {
   color: var(--text-orange);
   background-color: var(--bg-white);
-  padding: 0.5rem 0.75rem 1rem 0.75rem;
+  padding: 0.5rem 0.75rem 1.5rem 0.75rem;
   border-radius: 4px 4px 0 0;
   font-weight: 700;
   animation: tabSlideIn;
@@ -207,7 +207,7 @@ header .login-button,
 
 .hero-desktop-wrapper {
   @media (min-width: 700px) {
-background-image: url("./assets/postlijn-desktop.svg");
+background-image: url("/assets/postlijn-desktop.svg");
     background-size: 80% auto;
     background-repeat: no-repeat;
   }
@@ -255,6 +255,7 @@ background-image: url("./assets/postlijn-desktop.svg");
     width: clamp(25vw, 30vw, 40vw);
     height: auto;
     max-width: 700px;
+    max-height: 500px;
   }
 }
 
@@ -283,8 +284,8 @@ background-image: url("./assets/postlijn-desktop.svg");
 .tabs-section {
   @media (min-width:700px) {
     margin: 0 auto;
-    padding: 1rem 6rem;
-    max-width: 1300px;
+    padding: 0.5rem 6rem;
+    max-width: 1200px;
     height: auto;
     justify-content: center;
   }
