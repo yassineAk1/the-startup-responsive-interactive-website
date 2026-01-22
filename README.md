@@ -64,6 +64,17 @@ Tijdens een color-contrasttest kwam naar voren dat er twee verschillende oranje 
 
 <img width="560" alt="Image" src="https://github.com/user-attachments/assets/8d31545b-1367-492a-8c75-16b485f06621" />  
 
+### Ontwerpkeuzes
+
+De grootste ontwerpkeuze was om het tab-systeem te maken zonder JavaScript. 
+Normaal zou ik hier JavaScript voor gebruiken, maar ik wilde het proberen met alleen CSS omdat ik hoorde dat dit mogelijk was.
+
+
+
+**Waarom geen JavaScript?**
+- **Performance:** Geen JavaScript die geladen moeten worden
+- **Toegankelijkheid:** Werkt altijd, zelfs als JavaScript is uitgeschakeld
+- **Progressive Enhancement:** De functionaliteit werkt in alle browsers
   
 # Interactief  
 
