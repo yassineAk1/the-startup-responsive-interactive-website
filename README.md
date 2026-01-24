@@ -97,7 +97,7 @@ Het menu opent als een popover met een cirkel-animatie vanaf de knop. Zo zie je 
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 ### Belangrijke features
 
-**1. Tab-systeem voor services**
+**1. Tab-systeem**
 
 Het tab-systeem is het hart van de website. Gebruikers kunnen makkelijk switchen tussen "Volg je pakket", "Versturen", "PostNL-punten" en "Postcodes". Normaal zou je hier JavaScript voor gebruiken, maar ik heb het opgelost met de `:target` pseudo-class van CSS.
 
@@ -135,7 +135,7 @@ Elke tab is een link met een hash (bijvoorbeeld `#volg`). Als je erop klikt, kom
 volledige code:
 https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/103b86b0087f1f6211bd64126186d67559a74bd5/style.css#L285-L359
 
-**2. Hamburger Menu met cirkel-animatie**
+**2. Hamburger Menu**
 
 Het hamburger menu was een uitdaging vanwege de open en sluit animatie die specifieke features nodig hebben om goe te werken, zoals display: allow discrete en overlay: allow discrete. 
 
