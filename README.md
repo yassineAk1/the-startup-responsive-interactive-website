@@ -54,6 +54,8 @@ https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/f5
 
 PostNL gebruikt twee fonts genaamd ABC Rom en hanken grotesk, ik heb deze overgenomen en responsive gemaakt met  `clamp()`:
 
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/f530920da819c79500bec59db23a6daf00aa88b7/stylesheet.css#L32-L34
+
 https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/f530920da819c79500bec59db23a6daf00aa88b7/stylesheet.css#L53-L62
 
 https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/f530920da819c79500bec59db23a6daf00aa88b7/style.css#L216-L225
