@@ -34,12 +34,48 @@ Ik heb gewerkt volgens mobile-first principe. Eerst mobile ontworpen, daarna uit
 **Schermbreedte > 1600px (desktop):**  
 ![Mockup Result (2)](https://github.com/user-attachments/assets/cb72350d-ab5f-44b5-8b0f-dfba539f91b0)
 
-### Huisstijl
+## Huisstijl PostNL
 
 Ik heb eerst de PostNL huisstijl uitgezocht voordat ik begon:
 
 ![Frame 9846](https://github.com/user-attachments/assets/93f22645-5a25-4c7e-8ccb-5b72dcc3f464)
 ![Image](https://github.com/user-attachments/assets/dd58ceaf-5221-4234-aaaf-4aa5113751c6)
+
+
+**Kleuren**
+
+Ik heb de PostNL huisstijl nauwkeurig overgenomen en in CSS custom properties gezet voor consistentie door de hele website:
+
+
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/f530920da819c79500bec59db23a6daf00aa88b7/stylesheet.css#L5-L29
+
+
+**Typografie**
+
+PostNL gebruikt twee fonts genaamd ABC Rom en hanken grotesk, ik heb deze overgenomen en responsive gemaakt met  `clamp()`:
+
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/f530920da819c79500bec59db23a6daf00aa88b7/style.css#L216-L225
+
+
+
+De info cards gebruiken verschillende accent kleuren uit de PostNL huisstijl:
+
+```css
+.info-card:nth-of-type(1) .card-content {
+  background-color: var(--card-red-main); /* Rood accent */
+}
+
+.info-card:nth-of-type(2) .card-content {
+  background-color: var(--card-blue-main); /* Blauw accent */
+}
+
+.info-card:nth-of-type(3) .card-content {
+  background-color: var(--card-navy-main); /* Navy accent */
+}
+```
+
+Elk card heeft ook een donkerdere variant voor de "lees meer" link, wat zorgt voor visuele hiërarchie binnen dezelfde kleurenfamilie.
+
 
 
 ### Toegankelijkheid  
