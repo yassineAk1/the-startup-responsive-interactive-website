@@ -34,12 +34,52 @@ Ik heb gewerkt volgens mobile-first principe. Eerst mobile ontworpen, daarna uit
 **Schermbreedte > 1600px (desktop):**  
 ![Mockup Result (2)](https://github.com/user-attachments/assets/cb72350d-ab5f-44b5-8b0f-dfba539f91b0)
 
-### Huisstijl
+## Huisstijl PostNL
 
 Ik heb eerst de PostNL huisstijl uitgezocht voordat ik begon:
 
 ![Frame 9846](https://github.com/user-attachments/assets/93f22645-5a25-4c7e-8ccb-5b72dcc3f464)
 ![Image](https://github.com/user-attachments/assets/dd58ceaf-5221-4234-aaaf-4aa5113751c6)
+
+
+**Kleuren**
+
+Ik heb de PostNL huisstijl nauwkeurig overgenomen en in CSS custom properties gezet voor consistentie door de hele website:
+
+
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/f530920da819c79500bec59db23a6daf00aa88b7/stylesheet.css#L5-L29
+
+
+**Typografie**
+
+PostNL gebruikt twee fonts genaamd ABC Rom en hanken grotesk, ik heb deze overgenomen en responsive gemaakt met  `clamp()`:
+
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/f530920da819c79500bec59db23a6daf00aa88b7/stylesheet.css#L32-L34
+
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/f530920da819c79500bec59db23a6daf00aa88b7/stylesheet.css#L53-L62
+
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/f530920da819c79500bec59db23a6daf00aa88b7/style.css#L216-L225
+
+
+
+De info cards gebruiken verschillende accent kleuren uit de PostNL huisstijl:
+
+```css
+.info-card:nth-of-type(1) .card-content {
+  background-color: var(--card-red-main); /* Rood accent */
+}
+
+.info-card:nth-of-type(2) .card-content {
+  background-color: var(--card-blue-main); /* Blauw accent */
+}
+
+.info-card:nth-of-type(3) .card-content {
+  background-color: var(--card-navy-main); /* Navy accent */
+}
+```
+
+Elk card heeft ook een donkerdere variant voor de "lees meer" link, wat zorgt voor visuele hiërarchie binnen dezelfde kleurenfamilie.
+
 
 
 ### Toegankelijkheid  
@@ -64,6 +104,17 @@ Tijdens een color-contrasttest kwam naar voren dat er twee verschillende oranje 
 
 <img width="560" alt="Image" src="https://github.com/user-attachments/assets/8d31545b-1367-492a-8c75-16b485f06621" />  
 
+### Ontwerpkeuzes
+
+De grootste ontwerpkeuze was om het tab-systeem te maken zonder JavaScript. 
+Normaal zou ik hier JavaScript voor gebruiken, maar ik wilde het proberen met alleen CSS omdat ik hoorde dat dit mogelijk was.
+
+
+
+**Waarom geen JavaScript?**
+- **Performance:** Geen JavaScript die geladen moeten worden
+- **Toegankelijkheid:** Werkt altijd, zelfs als JavaScript is uitgeschakeld
+- **Progressive Enhancement:** De functionaliteit werkt in alle browsers
   
 # Interactief  
 
@@ -86,7 +137,7 @@ Het menu opent als een popover met een cirkel-animatie vanaf de knop. Zo zie je 
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 ### Belangrijke features
 
-**1. Tab-systeem voor services**
+**1. Tab-systeem**
 
 Het tab-systeem is het hart van de website. Gebruikers kunnen makkelijk switchen tussen "Volg je pakket", "Versturen", "PostNL-punten" en "Postcodes". Normaal zou je hier JavaScript voor gebruiken, maar ik heb het opgelost met de `:target` pseudo-class van CSS.
 
@@ -124,7 +175,7 @@ Elke tab is een link met een hash (bijvoorbeeld `#volg`). Als je erop klikt, kom
 volledige code:
 https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/103b86b0087f1f6211bd64126186d67559a74bd5/style.css#L285-L359
 
-**2. Hamburger Menu met cirkel-animatie**
+**2. Hamburger Menu**
 
 Het hamburger menu was een uitdaging vanwege de open en sluit animatie die specifieke features nodig hebben om goe te werken, zoals display: allow discrete en overlay: allow discrete. 
 
@@ -174,7 +225,11 @@ https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/66
 
 
 ## Bronnen
-
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target#:~:text=This%20feature%20is%20well%20established,back()%20%2C%20history.
+https://stackoverflow.com/questions/77042256/css-transition-animation-not-working-for-popover-attribute
+https://css-tricks.com/css-target/#:~:text=We'll%20touch%20on%20all,down%20further%20on%20a%20page.
+https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using#:~:text=Transitioning%20a%20popover,are%20not%20by%20default%20animatable.
+https://www.smashingmagazine.com/2025/01/transitioning-top-layer-entries-display-property-css/
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
