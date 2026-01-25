@@ -139,7 +139,7 @@ Het menu opent als een popover met een cirkel-animatie vanaf de knop. Zo zie je 
 
 **1. Tab-systeem**
 
-Het tab-systeem is het hart van de website. Gebruikers kunnen makkelijk switchen tussen "Volg je pakket", "Versturen", "PostNL-punten" en "Postcodes". Normaal zou je hier JavaScript voor gebruiken, maar ik heb het opgelost met de `:target` pseudo-class van CSS.
+Het tab systeem is de belangrijkste feature. Gebruikers kunnen makkelijk switchen tussen "Volg je pakket", "Versturen", "PostNL-punten" en "Postcodes". Normaal zou ik hier JavaScript voor gebruiken, maar ik heb het opgelost met de `:target` pseudo-class van CSS.
 
 **Hoe werkt het:**
 Elke tab is een link met een hash (bijvoorbeeld `#volg`). Als je erop klikt, komt die hash in de URL en kan CSS daar op reageren met `:target`. Het bijbehorende formulier wordt dan getoond terwijl de anderen verborgen blijven.
@@ -179,8 +179,10 @@ https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/10
 
 Het hamburger menu was een uitdaging vanwege de open en sluit animatie die specifieke features nodig hebben om goe te werken, zoals display: allow discrete en overlay: allow discrete. 
 
-**Waarom een cirkel-animatie?**
+**Waarom een cirkel-animatie?**  
+Disney principes - Exaggeration en Appeal:  
 Ik wilde dat het duidelijk is waar het menu vandaan komt. Door de animatie te starten bij de button 90% horizontaal, 10% verticaal.
+De cirkel-animatie is bewust overdreven (Exaggeration) in plaats van een simpele slide groeit de cirkel uit tot 150% van het scherm. Dit trekt de aandacht van de gebruiker naar deze belangrijke actie.
 ```css
 .menu-popover {
   clip-path: circle(0% at 90% 10%); /* Start klein rechtsboven */
