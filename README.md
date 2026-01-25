@@ -2,7 +2,7 @@ Ontwerp en maak een responsive website voor een startup.
 
 De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
 
-# Titel
+# POST-NL
 Voor sprint 6 heb ik de PostNL homepage nagebouwd met focus op responsive design en toegankelijkheid. Ik heb alle technieken van de afgelopen sprints toegepast: semantische HTML, mobile-first werken, CSS interacties, toegankelijkheid en goede code conventies.
 
 
