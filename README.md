@@ -204,7 +204,7 @@ De cirkel-animatie is bewust overdreven (Exaggeration) in plaats van een simpele
 ```
 
 volledige code:
-https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/103b86b0087f1f6211bd64126186d67559a74bd5/style.css#L10-L66
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/103b86b0087f1f6211bd64126186d67559a74bd5/style.css#L285-L445  
 
 ## Naamgeving
 ### code conventies:  
