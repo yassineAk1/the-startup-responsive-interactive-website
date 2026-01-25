@@ -171,7 +171,8 @@ Elke tab is een link met een hash (bijvoorbeeld `#volg`). Als je erop klikt, kom
   display: block;
 }
 ```
-# Voor de animaties heb ik Disney principes toegepast. Bij hover bounced het icon (Anticipation), bij klikken schaalt de tab (Squash & Stretch) en draait het icon.   
+### disney principes - anticipation, squash & stretch 
+Voor de animaties heb ik Disney principes toegepast. Bij hover bounced het icon (Anticipation), bij klikken schaalt de tab (Squash & Stretch) en draait het icon.   
 
 volledige code:
 https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/103b86b0087f1f6211bd64126186d67559a74bd5/style.css#L285-L359
@@ -181,7 +182,7 @@ https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/10
 Het hamburger menu was een uitdaging vanwege de open en sluit animatie die specifieke features nodig hebben om goe te werken, zoals display: allow discrete en overlay: allow discrete. 
 
 **Waarom een cirkel-animatie?**  
-# Disney principes - Exaggeration en Appeal:  
+### Disney principes - Exaggeration en Appeal:  
 Ik wilde dat het duidelijk is waar het menu vandaan komt. Door de animatie te starten bij de button 90% horizontaal, 10% verticaal.
 De cirkel-animatie is bewust overdreven (Exaggeration) in plaats van een simpele slide groeit de cirkel uit tot 150% van het scherm. Dit trekt de aandacht van de gebruiker naar deze belangrijke actie.
 ```css
