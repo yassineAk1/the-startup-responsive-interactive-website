@@ -175,7 +175,7 @@ Elke tab is een link met een hash (bijvoorbeeld `#volg`). Als je erop klikt, kom
 Voor de animaties heb ik Disney principes toegepast. Bij hover bounced het icon (Anticipation), bij klikken schaalt de tab (Squash & Stretch) en draait het icon.   
 
 volledige code:
-https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/103b86b0087f1f6211bd64126186d67559a74bd5/style.css#L285-L359
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/103b86b0087f1f6211bd64126186d67559a74bd5/style.css#L285-L445
 
 **2. Hamburger Menu**
 
