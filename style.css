@@ -385,7 +385,14 @@ background-image: url("assets/Postlijn-desktop.svg");
 .tab:hover img {
   animation: iconBounce 0.7s;
   animation-iteration-count: infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+ 
+  animation-iteration-count: 1;
+ }
+
 }
+
 
 @keyframes iconBounce {
 
@@ -417,9 +424,17 @@ background-image: url("assets/Postlijn-desktop.svg");
   }
 }
 
+
+
+
 .tab:active img {
-  animation: iconClickSpin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+ animation: iconClickSpin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  @media (prefers-reduced-motion: reduce) {
+  animation: none;
+ }
 }
+
 
 @keyframes iconClickSpin {
   0% {
