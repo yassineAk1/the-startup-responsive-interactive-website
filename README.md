@@ -88,6 +88,22 @@ Tijdens het bouwen heb ik bewust rekening gehouden met toegankelijkheid en me ge
 
 Ik heb alle kleuren getest op contrast en een oranje tint aangepast omdat deze niet voldeed aan de AA-contrastnorm. Ook heb ik duidelijke focus states toegevoegd, zodat je altijd ziet waar je bent als je met het toetsenbord navigeert. Het hamburger menu is volledig met toetsenbord te bedienen en sluit automatisch met de Escape-toets.
 
+**Reduced Motion**
+
+Sommige mensen krijgen duizeligheid of misselijkheid van bewegende animaties. Daarom heb ik `prefers-reduced-motion` toegevoegd aan specifieke animaties.
+https://github.com/yassineAk1/the-startup-responsive-interactive-website/blob/901b0e138a09ce34c09c6a8a6c9a1b34b3d284b9/style.css#L385-L436
+
+**Wat dit doet:**
+- Als iemand in hun OS "Reduce motion" aan heeft staan, worden animaties beperkt of uitgeschakeld
+- Icon bounce speelt maar 1x af in plaats van infinite loop
+- Spin animatie wordt helemaal uitgeschakeld
+
+
+Dit is belangrijk voor mensen met:
+- Epilepsie
+- ADHD
+- Migraine gevoeligheid
+
 **Kleurcontrast verbeterd:**
 
 Tijdens een color-contrasttest kwam naar voren dat er twee verschillende oranje tinten zijn gebruikt voor de tekst "Volg je pakket". Deze voldeden allebei niet aan de WCAG-richtlijnen in combinatie met de achtergrond. Daarom is gekozen voor een andere oranje tint die wél minimaal voldoet aan het AA-niveau van de WCAG.
