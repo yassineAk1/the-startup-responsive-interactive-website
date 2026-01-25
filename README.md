@@ -7,8 +7,9 @@ Voor sprint 6 heb ik de PostNL homepage nagebouwd met focus op responsive design
 
 
 
-## Beschrijving
-<img width="1980" height="1325" alt="image" src="https://github.com/user-attachments/assets/ee774de9-ab6b-422e-843b-fc57646b0f82" />
+## Beschrijving  
+![Mockup Result (7)](https://github.com/user-attachments/assets/00ca3df2-3b5a-46de-966c-49a4cc9314bf)
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 
 ### Responsive
